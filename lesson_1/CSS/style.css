@@ -1,0 +1,17 @@
+body{
+	background-color: black;
+	color: white;
+}
+
+header{
+	display: flex;
+}
+.navigation_list{
+	display: flex;
+	justify-content: space between;
+	width: 90%;
+}
+
+.navigation_item{
+	list_style: none;
+}
