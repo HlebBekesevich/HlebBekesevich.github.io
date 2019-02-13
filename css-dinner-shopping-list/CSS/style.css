@@ -20,6 +20,10 @@ h1 {
 	margin-bottom: -18px;
 }
 
+input {
+	height: 20px;
+}
+
 .list {
 	background: #88839E;
 	margin-left: 140px;
@@ -27,6 +31,12 @@ h1 {
 	color: white;
 	margin-top: 40px;
 	font-size: 15pt;
+	padding: 15px;
+}
+
+.elemets {
+	margin: -5px;
+	padding: 10px;
 }
 
 .Bon {
@@ -39,8 +49,9 @@ h1 {
 	margin-top: 30px;
 }
 
-/*li::placeholder {
-color: #ffd595;*/
+.elemets::placeholder {
+color: #ffd595;
+}
 
 small {
 	font-size: 10pt;
