@@ -3,7 +3,7 @@ body {
 	font-family: arial;
 }
 
-div {
+.header {
 	background: #4A4F56;
 	text-align: center;
 	padding-bottom: 2px;
@@ -20,18 +20,13 @@ h1 {
 	margin-bottom: -18px;
 }
 
-li{
-	padding: 10px;
-}
-
-ul {
-	font-size: 15pt;
+.list {
 	background: #88839E;
 	margin-left: 140px;
 	margin-right: 140px;
 	color: white;
-	list-style-type: none;
 	margin-top: 40px;
+	font-size: 15pt;
 }
 
 .Bon {
@@ -44,14 +39,10 @@ ul {
 	margin-top: 30px;
 }
 
-li::placeholder {
-color: #ffd595;
+/*li::placeholder {
+color: #ffd595;*/
 
 small {
-
-}
-
-.mini {
 	font-size: 10pt;
 }
 
