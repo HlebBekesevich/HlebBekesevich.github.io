@@ -2,13 +2,13 @@ body {
 	background: #3B3F45;
 	font-family: sans-serif;
 	margin: 0;
-	border: 25px solid white;
-	height: 808px;
-	width: 1240px;
 }
 
 input {
-	display: none;
+	display: block;
+	float: left;
+	zoom: 200%;
+	margin: 5px;
 }
 
 h1 {
@@ -22,7 +22,7 @@ input:checked + .elemets {
 }
 
 small {
-	font-size: 10pt;
+	font-size: 12pt;
 	opacity: .6;
 }
 .header {
@@ -36,26 +36,33 @@ small {
 }
 
 .list {
+	float: left;
 	background: #88839E;
 	color: white;
 	margin-top: 40px;
 	font-size: 20pt;
-	width: 800px;
-	margin-left: 200px;
+	width: 60%;
+	margin-left: 20%;
 }
 
 .elemets {
-	padding: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.clear {
+	clear: left;
 }
 
 .Bon {
 	background: #4A4F56;
-	width: 750px;
+	width: 60%;
 	color: #EB7E7F;
 	text-align: center;
 	margin-top: 30px;
-	margin-left: 200px;
-	padding: 25px;
+	margin-left: 20%;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	display: block;
 	font-size: 20pt;
 }
