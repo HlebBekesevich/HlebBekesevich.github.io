@@ -1,0 +1,57 @@
+body {
+	background: #3B3F45;
+	font-family: arial;
+}
+
+div {
+	background: #4A4F56;
+	text-align: center;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	color: #EB7E7F;
+	margin: -10px;
+}
+
+p {
+	font-size: 15pt;
+}
+
+h1 {
+	margin-bottom: -18px;
+}
+
+li{
+	padding: 10px;
+}
+
+ul {
+	font-size: 15pt;
+	background: #88839E;
+	margin-left: 140px;
+	margin-right: 140px;
+	color: white;
+	list-style-type: none;
+	margin-top: 40px;
+}
+
+.Bon {
+	padding: 10px;
+	background: #4A4F56;
+	margin-left: 140px;
+	margin-right: 140px;
+	color: #EB7E7F;
+	text-align: center;
+	margin-top: 30px;
+}
+
+li::placeholder {
+color: #ffd595;
+
+small {
+
+}
+
+.mini {
+	font-size: 10pt;
+}
+
