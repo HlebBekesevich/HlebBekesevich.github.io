@@ -77,4 +77,5 @@ li:hover {
 	border-bottom: 5px solid white;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	cursor: pointer
 }
