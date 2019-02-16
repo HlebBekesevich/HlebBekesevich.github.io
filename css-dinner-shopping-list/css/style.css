@@ -44,10 +44,12 @@ ul {
 	margin-top: 40px;
 	font-size: 20pt;
 	width: 60%;
+	padding: 0;
 	margin-left: 20%;
 }
 
 li {
+	list-style: none;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
