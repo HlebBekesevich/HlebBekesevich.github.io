@@ -8,8 +8,7 @@ input {
 	display: block;
 	float: left;
 	zoom: 300%;
-	margin-top: 4.5px;
-	margin-bottom: -1px;
+	margin-top: 4px;
 }
 
 h1 {
@@ -23,7 +22,7 @@ input:checked + li {
 }
 
 input:checked + li:active {
-    background: red;
+    background: #EB7E7F;
     opacity: 1;
     text-decoration: none;
 }
@@ -85,7 +84,7 @@ li:hover {
 }
 
 li:active {
-	background: red;
+	background: #EB7E7F;
 }
 
 .elemets1 {

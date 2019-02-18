@@ -1,105 +1,129 @@
-* {
+*,*:before,*:after{
+	box-sizing: border-box;
 	transition: all .1s ease-in;
-	background-color: #3399CC;
 	color: white;
-	font-family: "Lucida Sans Unicode";
+	margin: 0;
 }
 
 body {
-	margin-left: 15%;
-	margin-right: 15%;
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	font-family: sans-serif;
+	border: 1em solid #2B81AC;
+	background: #3399CC;
+}
+
+span {
+	font-size: 24px;
+	padding: 1em 0;
 }
 
 div {
-	font-size: 15pt;
-	margin-left: 20%;
+	max-width: 960px;
+	margin: auto;
 }
 
 ul {
-	letter-spacing : -.36em;
-    font-size : 0;
-
+	padding: 0;
+	font-size: 0;
+	border: 3px solid white;
+	background-color: white;
 }
 
 li {
 	display: inline-block;
-	font-size: 20pt;
-	outline: 5px solid white;
-	height: 80px;
 	text-align: center;
-	padding: 20px;
-	margin: 0;
-	letter-spacing: normal;
+	border-color: white;
+	border: 3px solid white;
+}
+
+li span {
+	display: block;
+	color: rgba(255,255,255,.7);
+}
+
+ul:hover li {
+	opacity: .5;
+}
+
+ul li:hover {
 	opacity: 1;
 }
 
-p {
-	opacity: 0.8;
+.text {
+	color: rgba(255,255,255,1);
+	padding: 2px;
 }
 
-span {
-	opacity: 0.6;
+.header {
+	font-weight: bold;
+	font-size: 25pt;
+	padding: 20px 0;
+}
+
+p {
+	font-size: 15pt;
+	font-weight: 500;
+	padding: 10px 0;
+}
+
+.wi{
+	margin-left: .5em;
+	font-size: 1.3em;
 }
 
 .block1 {
-	width: 350px;
+	width: 50%;
+	background: #3399CC;
 }
 
 .block2 {
 	background: #24BDC8;
-	width: 155px;
+	width: 25%;
 }
 
 .block3 {
 	background: #9A6E95;
-	width: 155px;
+	width: 25%;
 }
 
 .block4 {
 	background: #C75444;
-	width: 155px;
+	width: 25%;
 }
 
 .block5 {
 	background: #E97049;
-	width: 155px;
+	width: 25%;
 }
 
 .block6 {
 	background: #FECB5F;
-	width: 155px;
+	width: 25%;
 }
 
 .block7 {
 	background: #97C396;
-	width: 155px;
+	width: 25%;
 }
 
 .block8 {
 	background: #609396;
-	width: 155px;
+	width: 25%;
 }
 
 .block9 {
 	background: #D07198;
-	width: 350px;
-}!
+	width: 50%;
+}
 
 .block10 {
 	background: #2A8C67;
-	width: 155px;
+	width: 25%;
 }
 
 .block11 {
 	background: #616A96;
-	width: 740px;
+	width: 100%;
 }
-
-ul:hover li{
-	opacity: 0.2;
-}
-
-li:hover {
-	opacity: 1;
-}
-
