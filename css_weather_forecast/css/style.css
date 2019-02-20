@@ -5,6 +5,11 @@
 	margin: 0;
 }
 
+html {
+	height: 100%;
+	width: 100%;
+}
+
 body {
 	height: 100%;
 	width: 100%;
@@ -14,7 +19,9 @@ body {
 	background: #3399CC;
 }
 
-span {
+a {
+	display: block;
+	text-decoration: none;
 	font-size: 24px;
 	padding: 1em 0;
 }
@@ -49,11 +56,6 @@ ul:hover li {
 
 ul li:hover {
 	opacity: 1;
-}
-
-.text {
-	color: rgba(255,255,255,1);
-	padding: 2px;
 }
 
 .header {

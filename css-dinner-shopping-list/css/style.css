@@ -2,29 +2,29 @@ body {
 	background: #3B3F45;
 	font-family: sans-serif;
 	margin: 0;
+	color: white;
 }
 
 input {
-	display: block;
 	float: left;
 	zoom: 300%;
 	margin-top: 4px;
 }
 
 h1 {
-	margin-bottom: -20px;
+	margin-bottom: -15px;
 }
 
-input:checked + li {
+label {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+input:checked + label{
     background: #625E77;
     opacity: .6;
     text-decoration: line-through;
-}
-
-input:checked + li:active {
-    background: #EB7E7F;
-    opacity: 1;
-    text-decoration: none;
 }
 
 small {
@@ -44,7 +44,6 @@ small {
 ul {
 	float: left;
 	background: #88839E;
-	color: white;
 	margin-top: 40px;
 	font-size: 20pt;
 	width: 60%;
@@ -54,8 +53,7 @@ ul {
 
 li {
 	list-style: none;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	display: inline;
 }
 
 .clear {
@@ -75,7 +73,7 @@ li {
 	font-size: 20pt;
 }
 
-li:hover {
+label:hover {
 	border-top: 5px solid white;
 	border-bottom: 5px solid white;
 	padding-top: 10px;
@@ -83,7 +81,7 @@ li:hover {
 	cursor: pointer;
 }
 
-li:active {
+label:active {
 	background: #EB7E7F;
 }
 
