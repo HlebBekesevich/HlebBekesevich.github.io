@@ -2,21 +2,52 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Portfolio</title>
+	<title>Bekesevich Hlib</title>
 </head>
 <body>
 	<style>
-		body {
-			background: lightgray;
+		* {
+			background: #8BACBF;
+			font-family: sans-serif;
+			color: white;
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
 		}
+		
 		li {
 			list-style: none;
+		}
+
+		h1, li {
+			padding: 10px 80px;
+		}
+
+		img {
+			height: 250px;
+		}
+
+		img:hover {
+			border: white solid 5px;
+		}
+		
+		img {
+			margin-top: 10px;
 		}
 	</style>
 	<h1>My works</h1>
 	<ul>
-		<li><a href="css-dinner-shopping-list">CSS Dinner</a></li>
-		<li><a href="css_weather_forecast">Weather Forecast</a></li>
+		<li>
+			<a href="https://HlebBekesevich.github.io/css-dinner-shopping-list">CSS Dinner</a><br>
+			<a href="https://HlebBekesevich.github.io/css-dinner-shopping-list" class="img">
+				<img src="img/dinner.png" alt="dinner">
+			</a>
+		</li>
+		<li><a href="https://HlebBekesevich.github.io/css_weather_forecast">Weather Forecast</a><br>
+			<a href="https://HlebBekesevich.github.io/css_weather_forecast" class="img">
+				<img src="img/forecast.png" alt="forecast">
+			</a>
+		</li>
 	</ul>
 </body>
 </html>
