@@ -8,24 +8,38 @@
 
 body {
 	background: #F1F1F1;
-	margin: 10%;
+}
+
+.content, .block, form{
+	display: block;
+	width: 90%;
+	margin: auto;
 }
 
 input {
-	height: 110px;
 	outline: 0;
 	border: 0;
 	display: inline-block;
+	font-size: 110px;
 }
 
 input[type="text"] {
 	font-weight: bold;
 	width: calc(100% - 110px);
-	font-size: 110px;
 	background: #F1F1F1;
 }
 
+form {
+	margin: 5% auto;
+	font-size: 0;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+	zoom: 95%;
+}
 input[type="submit"] {
+	height: 110px;
 	width: 110px;
 	background: url(../img/magnifier.svg);
 }
@@ -36,12 +50,6 @@ input:focus {
 
 input::-webkit-input-placeholder {
 	color: #c2c2c2;
-}
-
-form {
-	height: 110px;
-	font-size: 0;
-	margin-bottom: 5%;
 }
 
 div {
@@ -77,10 +85,6 @@ a {
 
 img {
 	margin: 5%;
-}
-
-.content, .block, form {
-	width: 100%;
 }
 
 .people img {
