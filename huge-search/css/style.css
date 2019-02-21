@@ -11,22 +11,22 @@ body {
 	margin: 5%;
 }
 
-input[type="text"] {
-	font-weight: bold;
-	width: calc(100% - 120px);
+input {
 	height: 120px;
 	outline: 0;
 	border: 0;
+}
+
+input[type="text"] {
+	font-weight: bold;
+	width: calc(100% - 120px);
 	font-size: 110px;
 	background: #F1F1F1;
 }
 
 input[type="submit"] {
 	width: 120px;
-	height: 120px;
 	background: url(../img/favicon.png);
-	outline: 0;
-	border: 0;
 	position: absolute;
 }
 
@@ -43,7 +43,6 @@ input::-webkit-input-placeholder {
 }
 
 form {
-	width: 100%;
 	margin-bottom: 10%;
 }
 
@@ -82,16 +81,12 @@ img {
 	margin: 5%;
 }
 
-.content {
+.content, .block, form {
 	width: 100%;
 }
 
 .people img {
 	border-radius: 50%;
-}
-
-.block {
-	width: 100%;
 }
 
 div.people {
