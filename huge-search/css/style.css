@@ -42,7 +42,13 @@ input[type="submit"]:hover {
 input[type="submit"] {
 	height: 127px;
 	width: 127px;
-	background: url(../img/magnifier.svg);
+	font-size: 110px;
+	background-color: #F1F1F1;
+	background-size: 110px 110px;
+	background-image: url(../img/magnifier.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: inline-block;
 }
 
 input:focus {
