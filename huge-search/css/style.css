@@ -22,12 +22,12 @@ input {
 	border: 0;
 	display: inline-block;
 	font-size: 110px;
+	background: #F1F1F1;
 }
 
 input[type="text"] {
 	font-weight: bold;
 	width: calc(100% - 127px);
-	background: #F1F1F1;
 }
 
 form {
@@ -40,15 +40,11 @@ input[type="submit"]:hover {
 	zoom: 95%;
 }
 input[type="submit"] {
-	height: 127px;
 	width: 127px;
-	font-size: 110px;
-	background-color: #F1F1F1;
 	background-size: 110px 110px;
 	background-image: url(../img/magnifier.svg);
 	background-repeat: no-repeat;
 	background-position: center;
-	display: inline-block;
 }
 
 input:focus {
