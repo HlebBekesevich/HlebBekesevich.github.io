@@ -14,6 +14,7 @@ body {
 	display: block;
 	width: 90%;
 	margin: auto;
+	font-size: 0;
 }
 
 input {
@@ -25,7 +26,7 @@ input {
 
 input[type="text"] {
 	font-weight: bold;
-	width: calc(100% - 110px);
+	width: calc(100% - 127px);
 	background: #F1F1F1;
 }
 
@@ -39,8 +40,8 @@ input[type="submit"]:hover {
 	zoom: 95%;
 }
 input[type="submit"] {
-	height: 110px;
-	width: 110px;
+	height: 127px;
+	width: 127px;
 	background: url(../img/magnifier.svg);
 }
 
@@ -52,10 +53,9 @@ input::-webkit-input-placeholder {
 	color: #c2c2c2;
 }
 
-div {
+.people, .popular, .recent {
 	display: inline-block;
 	width: calc(80%/3);
-	margin: 0;
 	font-size: 0;
 }
 
@@ -95,4 +95,8 @@ img {
 
 div.popular {
 	margin: 0 10%;
+}
+
+.content {
+	margin-bottom: 10%;
 }
