@@ -17,6 +17,10 @@ body {
 	font-size: 0;
 }
 
+form {
+	margin: 5% auto;
+}
+
 input {
 	outline: 0;
 	border: 0;
@@ -27,12 +31,7 @@ input {
 
 input[type="text"] {
 	font-weight: bold;
-	width: calc(100% - 127px);
-}
-
-form {
-	margin: 5% auto;
-	font-size: 0;
+	width: calc(100% - 85px);
 }
 
 input[type="submit"]:hover {
@@ -40,7 +39,7 @@ input[type="submit"]:hover {
 	zoom: 95%;
 }
 input[type="submit"] {
-	width: 127px;
+	width: 85px;
 	background-size: 85px 85px;
 	background-image: url(../img/magnifier.svg);
 	background-repeat: no-repeat;
