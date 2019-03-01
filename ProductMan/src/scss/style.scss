@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,900,600i');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+}
+
+body {
+	font-size: 100%;
+	font-family: Roboto, sans-serif;
+	color: #303030;
+	background-color: #eeeeee;
+}
+
+.content {
+	max-width: 1198px;
+	width: 100%;
+	margin: auto;
+}
+
+.black_white {
+	width: 100%;
+	margin: auto;
+	font-size: 0;
+
+	&__list {
+		padding: 0;
+		margin-bottom: 90px;
+	}
+
+	&__item {
+		display: inline-block;
+		list-style: none;
+		font-size: 18px;
+		position: relative;
+
+		&:first-child {
+			font-size: 48px;
+			font-weight: bold;
+			letter-spacing: 1px;
+		}
+
+		&:not(:first-child) {
+			left: 571px;
+			bottom: 7px;
+			margin-right: 50px;
+			letter-spacing: 0.5px;
+		}
+
+		&:last-child {
+			margin-left: -15px;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: black;
+	}
+	&__body {
+		display: inline-block;
+		width: 100%;
+		height: 491px;
+	}
+
+	&__img {
+		display: inline-block;
+		min-height: 391px;
+		width: 362px;
+	}
+
+	&__text {
+		display: inline-block;
+		max-width: 618px;
+		min-height: 391px;
+		font-size: 24px;
+		text-align: right;
+		margin-right: 103px;
+
+		& h1 {
+			display: inline-block;
+			max-width: 615px;
+			font-size: 150px;
+			text-transform: uppercase;
+			font-family: Raleway;
+			text-align: end;
+			font-weight: 1000;
+			letter-spacing: 2.5px;
+			line-height: 150px;
+			margin-bottom: 25px;
+		}
+
+		& p {
+			font-weight: 100;
+			display: inline-block;
+			width: 575px;
+			letter-spacing: 0.45px;
+			line-height: 35px;
+		}
+
+		& a {
+			position: relative;
+			display: block;
+			color: red;
+			text-decoration: none;
+			font-weight: 600;
+			letter-spacing: 0.5px;
+			margin-top: 40px;
+			bottom: 20px;
+		}
+	}
+}

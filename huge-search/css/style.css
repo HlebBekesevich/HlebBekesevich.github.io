@@ -12,7 +12,7 @@ body {
 
 .content, .block, form{
 	display: block;
-	width: 90%;
+	width: 95%;
 	margin: auto;
 	font-size: 0;
 }
@@ -34,16 +34,17 @@ input[type="text"] {
 	width: calc(100% - 85px);
 }
 
-input[type="submit"]:hover {
-	cursor: pointer;
-	zoom: 95%;
-}
 input[type="submit"] {
 	width: 85px;
 	background-size: 85px 85px;
 	background-image: url(../img/magnifier.svg);
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+	zoom: 95%;
 }
 
 input:focus {
@@ -56,7 +57,7 @@ input::-webkit-input-placeholder {
 
 .people, .popular, .recent {
 	display: inline-block;
-	width: calc(80%/3);
+	width: calc(90%/3);
 	font-size: 0;
 }
 
@@ -72,18 +73,18 @@ li {
 	margin: 1% 0;
 }
 
-a:hover {
-	background-color: rgba(118,117,128,0.1);
-	color: #ec5a62;
-}
-
 a {
 	display: flex;
 	align-items: center;
-	font-size: 11pt;
+	font-size: 10pt;
 	background-color: rgba(118,117,128,0.05);
 	border-radius: 10px;
 	text-decoration: none;
+}
+
+a:hover {
+	background-color: rgba(118,117,128,0.1);
+	color: #ec5a62;
 }
 
 img {
@@ -95,7 +96,7 @@ img {
 }
 
 div.popular {
-	margin: 0 10%;
+	margin: 0 5%;
 }
 
 .content {
