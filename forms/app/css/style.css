@@ -12,11 +12,13 @@ html
     width: 100%;
 }
 
-body
+.daily_form
 {
     font-family: Arial;
 
-    color: #7a7b7f; 
+    padding: 60px; 
+
+    color: #7a7b7f;
     background: -webkit-gradient(linear, left bottom, right top, from(#ff512f), to(#dd2476));
     background: linear-gradient(to top right, #ff512f, #dd2476);
 }
@@ -26,7 +28,7 @@ body
     font-size: 0; 
 
     max-width: 460px;
-    margin: 60px auto;
+    margin: auto;
     padding: 30px;
 
     border-radius: 3px;
@@ -112,6 +114,9 @@ body
 }
 .form__btn:active
 {
+    margin-top: 3px;
+    margin-bottom: 17px; 
+
     -webkit-filter: drop-shadow(0 0 0 #c06);
             filter: drop-shadow(0 0 0 #c06);
 }
