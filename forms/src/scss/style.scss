@@ -79,11 +79,12 @@ body {
 		font-weight: bold;
 		margin-bottom: 20px;
 		outline: none;
+		filter: drop-shadow(0 3px 0 #cc0066);
+		transition: opacity .2s ease;
+		cursor: pointer;
 
-		&:hover {
-			filter: drop-shadow(0 3px 0 #cc0066);
-			transition: opacity .2s ease;
-			cursor: pointer;
+		&:active {
+			filter: drop-shadow(0 0 0 #cc0066);
 		}
 	}
 

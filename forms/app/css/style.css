@@ -97,20 +97,23 @@ body
     margin-bottom: 20px;
     padding: 15px;
 
-    color: white;
-    border: none;
-    border-radius: 3px;
-    outline: none; 
-    background: #ea355a;
-}
-.form__btn:hover
-{
     cursor: pointer; 
     -webkit-transition: opacity .2s ease;
             transition: opacity .2s ease;
 
+    color: white;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background: #ea355a;
+
     -webkit-filter: drop-shadow(0 3px 0 #c06);
             filter: drop-shadow(0 3px 0 #c06);
+}
+.form__btn:active
+{
+    -webkit-filter: drop-shadow(0 0 0 #c06);
+            filter: drop-shadow(0 0 0 #c06);
 }
 .form__foot
 {
