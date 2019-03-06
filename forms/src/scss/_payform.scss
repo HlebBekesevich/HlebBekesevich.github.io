@@ -1,0 +1,122 @@
+.pay {
+	width: 100%;
+	padding: 50px 0;
+	background: linear-gradient(to bottom right, #555A5C, #191D21);
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+.formpay {
+	width: 335px;
+	margin: auto;
+	padding: 0;
+	font-size: 0px;
+	background-color: white;
+	
+	&__head {
+		width: 100%;
+		background-color: #f8edaf;
+		margin-bottom: 40px;
+
+		& > * {
+			padding: 15px 20px;
+			display: inline-block;
+			width: 50%;
+		}
+
+		&-big {
+			font-size: 14px;
+			color: #6e7f7b;
+			font-weight: 700;
+		}
+
+		&-small {
+			font-size: 10px;
+			letter-spacing: 1px;
+			color: #a6a28d;
+		}
+
+		&-price {
+			font-size: 36px;
+			text-align: right;
+			letter-spacing: -2px;
+			color: #637570;
+		}
+	}
+
+	&__body {
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	&__text {
+		font-size: 13px;
+		color: $text_gray;
+		margin-bottom: 10px;
+
+		&.cvv {
+			display: inline-block;
+		}
+	}
+
+	&__vvod {
+		padding: 10px;
+		margin-bottom: 25px;
+		color: #727f82;
+		font-size: 13px;
+		border: 2px solid #bac8cb;
+
+		&.card {
+			width: 100%;
+		}
+
+		&.month {
+			width: 175px;
+			margin-right: 20px;
+		}
+
+		&.year {
+			width: 100px;
+		}
+
+		&.cvv {
+			display: inline-block;
+			width: 95px;
+			margin-right: 10px;
+		}
+
+		&:focus {
+			border: 2px solid #82d4e7;
+		}
+	}
+
+	&__link {
+		font-size: 13px;
+		color: $text_gray;
+		text-decoration-color: $text_gray;
+	}
+
+	&__line {
+		width: 100%;
+		height: 2px;
+		border: none;
+		background-color: #edf0f1;
+		margin-bottom: 25px;
+	}
+
+	&__btn {
+		background-color: #25b86a;
+		padding: 15px;
+		width: 100%;
+		border: none;
+		color: white;
+		font-size: 20px;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	&__order {
+		text-align: center;
+		padding-bottom: 20px;
+	}
+}
