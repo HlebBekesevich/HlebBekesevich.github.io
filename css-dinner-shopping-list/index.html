@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>CSS Dinner</title>
+	<link rel="icon" type="image/x-icon" href="image/icon.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -10,52 +11,52 @@
 		<h1>CSS Diner Shopping List</h1>
 		<p>Lets's go to the mall!</p>
 	</div>
-	<ul>
-		<li><input type="checkbox" id="check">
-			<label for="check">
+	<ul class="list">
+		<li class="items"><input type="checkbox" id="check" class="check">
+			<label for="check" class="item">
 				
 				<span> A lot of pickeles
-					<small>( for the next lessons about CSS )</small>
+					<small class="small">( for the next lessons about CSS )</small>
 				</span>
 			</label>
 		</li>
-		<li><input type="checkbox" id="check1">
-			<label for="check1" class="elemets1">
+		<li class="items"><input type="checkbox" id="check1" class="check">
+			<label for="check1" class="elemets1 item">
 				
 				<span> 10 apples
-					<small >( for more CSS manipulations )</small>
+					<small class="small" >( for more CSS manipulations )</small>
 				</span>
 			</label>
 		</li>	
-		<li>
-			<input type="checkbox" id="check2">
-			<label for="check2">	
+		<li class="items">
+			<input type="checkbox" id="check2" class="check">
+			<label for="check2" class="item">	
 			 	<span> 20 oranges
-					<small>( bacause they are awesome )</small>
+					<small class="small">( bacause they are awesome )</small>
 				</span>
 			</label>
 		</li>
-		<li><input type="checkbox" id="check3">
-			<label for="check3" class="elemets1">
+		<li class="items"><input type="checkbox" id="check3" class="check">
+			<label for="check3" class="elemets1 item">
 				<span> 13 plates
-					<small>( hm... they always disappear )</small>
+					<small class="small">( hm... they always disappear )</small>
 				</span>
 			</label>
 		</li>
-		<li><input type="checkbox" id="check4">
-			<label for="check4">
+		<li class="items"><input type="checkbox" id="check4" class="check">
+			<label for="check4" class="item">
 				<span> 15 bentos</span>	
 			</label>
 		</li>
-		<li><input type="checkbox" id="check5">
-			<label for="check5" class="elemets1">
+		<li class="items"><input type="checkbox" id="check5" class="check">
+			<label for="check5" class="elemets1 item">
 				<span> 1 bottle of Sake ^_^
-					<small>( for my friends )</small>
+					<small class="small">( for my friends )</small>
 				</span>	
 			</label>
 		</li>
 	</ul>
 	<div class="clear"></div>
-	<span class="Bon">Bon appetit :)</span>
+	<input type="submit" class="Bon" value="Bon appetit :)">
 </body>
 </html>

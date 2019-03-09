@@ -38,7 +38,8 @@ html
 .formpay__head
 {
     width: 100%;
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
+    padding: 20px; 
 
     background-color: #f8edaf;
 }
@@ -46,8 +47,7 @@ html
 {
     display: inline-block;
 
-    width: 50%; 
-    padding: 15px 20px;
+    width: 50%;
 }
 .formpay__head-big
 {
@@ -76,7 +76,7 @@ html
 .formpay__body
 {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
 }
 .formpay__text
 {
@@ -111,6 +111,8 @@ html
 }
 .formpay__vvod.year
 {
+    visibility: hidden; 
+
     width: 100px;
 }
 .formpay__vvod.cvv
@@ -157,9 +159,10 @@ html
 }
 .formpay__order
 {
-    padding-bottom: 20px; 
+    display: block;
 
-    text-align: center;
+    width: 85px;
+    margin: auto;
 }
 
 .daily_form

@@ -17,9 +17,9 @@
 		width: 100%;
 		background-color: #f8edaf;
 		margin-bottom: 40px;
+		padding: 20px;
 
 		& > * {
-			padding: 15px 20px;
 			display: inline-block;
 			width: 50%;
 		}
@@ -46,7 +46,7 @@
 
 	&__body {
 		width: 100%;
-		padding: 0 20px;
+		padding: 0 20px 20px 20px;
 	}
 
 	&__text {
@@ -116,7 +116,8 @@
 	}
 
 	&__order {
-		text-align: center;
-		padding-bottom: 20px;
+		display: block;
+		width: 85px;
+		margin: auto;
 	}
 }

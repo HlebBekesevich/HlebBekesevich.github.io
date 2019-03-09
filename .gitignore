@@ -1,5 +1,8 @@
 node_modules
 package-lock.json
-src/img/*
-src/libs/*
-src/fonts/*
+*.psd
+*.zip
+template
+*src/img/**/*.*
+*src/libs/**/*.*
+*src/fonts/**/*.*

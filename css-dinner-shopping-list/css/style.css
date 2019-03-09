@@ -1,90 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+}
+
 body {
 	background: #3B3F45;
 	font-family: sans-serif;
-	margin: 0;
 	color: white;
 }
 
-input {
-	float: left;
+.list {
+	background: #88839E;
+	font-size: 0;
+	width: 60%;
+	margin: 50px auto;
+}
+
+.check {
 	zoom: 300%;
-	margin-top: 4px;
+	display: inline;
 }
 
-h1 {
-	margin-bottom: -15px;
-}
-
-label {
-	display: block;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
-input:checked + label{
+.check:checked + .item{
     background: #625E77;
     opacity: .6;
     text-decoration: line-through;
 }
 
-small {
-	font-size: 12pt;
+.small {
+	font-size: 15px;
 	opacity: .6;
 }
 .header {
 	background: #4A4F56;
 	text-align: center;
-	padding-bottom: 2px;
-	padding-top: 2px;
 	color: #EB7E7F;
 	height: 120px;
-	font-size: 15pt;
+	font-size: 20px;
 }
 
-ul {
-	float: left;
-	background: #88839E;
-	margin-top: 40px;
-	font-size: 20pt;
-	width: 60%;
-	padding: 0;
-	margin-left: 20%;
-}
-
-li {
+.items {
+	font-size: 20px;
+	padding: 10px;
 	list-style: none;
-	display: inline;
-}
-
-.clear {
-	clear: left;
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
 }
 
 .Bon {
 	background: #4A4F56;
+	margin: auto;
 	width: 60%;
+	padding: 10px;
 	color: #EB7E7F;
-	text-align: center;
-	margin-top: 30px;
-	margin-left: 20%;
-	padding-top: 25px;
-	padding-bottom: 25px;
 	display: block;
-	font-size: 20pt;
-}
-
-label:hover {
-	border-top: 5px solid white;
-	border-bottom: 5px solid white;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	font-size: 25px;
+	border: none;
 	cursor: pointer;
 }
 
-label:active {
-	background: #EB7E7F;
+.item {
+	display: inline-block;
+	cursor: pointer;
+	width: 100%;
 }
 
-.elemets1 {
-	background: #625E77;
+.item:hover {
+	border-top: 5px solid white;
+	border-bottom: 5px solid white;
+}
+
+.item:active {
+	background: #EB7E7F;
 }

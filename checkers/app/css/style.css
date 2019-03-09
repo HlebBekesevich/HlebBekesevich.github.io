@@ -1,11 +1,13 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
-body, html {
-	width: 100%
+body,
+html {
+	width: 100%;
 }
 
 body {
@@ -50,7 +52,7 @@ body {
 	top: calc((100% / 8) * 6);
 }
 
-.eingts-g{
+.eingts-g {
 	top: calc((100% / 8) * 7);
 }
 
@@ -78,7 +80,7 @@ body {
 	left: calc((100% / 8) * 6);
 }
 
-.eingts-v{
+.eingts-v {
 	left: calc((100% / 8) * 7);
 }
 
