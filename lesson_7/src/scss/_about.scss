@@ -3,16 +3,16 @@
 	background-size: cover;
 	position: relative;
 	z-index: 0;
-	color: white;
+	color: $white;
 	display: flex;
 	align-items: center;
 	min-height: 50vh;
 
 	&::before {
 		content: "";
-        background-color: rgba($first-screen-bg, .7);
-        @include overlay;
-	} 
+		@include overlay;
+		background-color: rgba($first-screen-bg, .7);
+	}
 
 	.row {
 		justify-content: flex-end;
@@ -27,8 +27,8 @@
 
 	&__title {
 		font-size: 32px;
-		margin: 0 0 0.2rem;
-		font-weight: 700;
+		margin: 0 0 .2rem;
+		font-weight: 700; 
 	}
 
 	&__prof {

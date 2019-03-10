@@ -1,5 +1,14 @@
 .top-line {
-    
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding-top: 35px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .logo {
 
         &__link {
@@ -33,6 +42,7 @@
                         position: absolute;
                         top: 0;
                         right: -100%;
+                        color: $white;
                     }
                 }
             }
