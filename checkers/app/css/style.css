@@ -15,8 +15,8 @@ body {
 }
 
 .desk {
-	width: 60%;
-	min-height: 120vh;
+	width: 800px;
+	height: 800px;
 	margin: auto;
 	position: relative;
 	border: 10px solid brown;
