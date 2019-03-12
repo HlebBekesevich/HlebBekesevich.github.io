@@ -15,7 +15,7 @@ body {
 
 .content, .block, .form{
 	display: block;
-	max-width: 1060px;
+	max-width: 1055px;
 	margin: auto;
 	font-size: 0;
 }
