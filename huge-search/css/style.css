@@ -1,27 +1,30 @@
 
 *{
-	font-family: Arial, sans-serif;
-	color: #c2c2c2;
 	box-sizing: border-box;
 	padding: 0;
+	margin: 0;
 }
 
 body {
+	width: 100%;
 	background: #F1F1F1;
+	font-family: Arial, sans-serif;
+	color: #c2c2c2;
+	padding-top: 5%;
 }
 
-.content, .block, form{
+.content, .block, .form{
 	display: block;
-	width: 95%;
+	max-width: 1060px;
 	margin: auto;
 	font-size: 0;
 }
 
-form {
-	margin: 5% auto;
+.form {
+	margin-bottom: 6%;
 }
 
-input {
+.input {
 	outline: 0;
 	border: 0;
 	display: inline-block;
@@ -29,76 +32,86 @@ input {
 	background: #F1F1F1;
 }
 
-input[type="text"] {
+.text {
 	font-weight: bold;
-	width: calc(100% - 85px);
+	width: calc(100% - 127px);
 }
 
-input[type="submit"] {
-	width: 85px;
+.submit {
+	width: 127px;
 	background-size: 85px 85px;
 	background-image: url(../img/magnifier.svg);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 50% 40%;
 }
 
-input[type="submit"]:hover {
+.submit:hover {
 	cursor: pointer;
 	zoom: 95%;
 }
 
-input:focus {
+.input:focus {
 	color: #ec5a62;
 }
 
-input::-webkit-input-placeholder {
+.input::-webkit-input-placeholder {
 	color: #c2c2c2;
 }
 
 .people, .popular, .recent {
 	display: inline-block;
-	width: calc(90%/3);
+	width: 30%;
 	font-size: 0;
 }
 
-h3 {
+.colum_name {
+	margin-bottom: 7%;
 	font-size: 12pt;
 	font-weight: 800;
 	text-transform: uppercase;
 }
 
-li {
+.items {
 	list-style: none;
 	font-weight: bold;
-	margin: 1% 0;
 }
 
-a {
+.items:not(:last-child) {
+	margin-bottom: 1.5%;
+}
+
+.link {
 	display: flex;
+	color: #ABABAD;
 	align-items: center;
-	font-size: 10pt;
+	font-size: 14px;
 	background-color: rgba(118,117,128,0.05);
-	border-radius: 10px;
+	border-radius: 5px;
 	text-decoration: none;
+	padding: 4%;
 }
 
-a:hover {
+.link:hover {
 	background-color: rgba(118,117,128,0.1);
 	color: #ec5a62;
 }
 
-img {
-	margin: 5%;
-}
-
-.people img {
+.people .img {
 	border-radius: 50%;
 }
 
-div.popular {
-	margin: 0 5%;
+.people {
+	margin-right: 5%;
+}
+
+.popular {
+	margin-right: 5%;
 }
 
 .content {
 	margin-bottom: 10%;
+}
+
+.img {
+	margin-right: 5%;
 }
