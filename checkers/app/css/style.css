@@ -15,73 +15,74 @@ body {
 }
 
 .desk {
-	width: 800px;
-	height: 800px;
-	margin: auto;
-	position: relative;
+	position: absolute;
 	border: 10px solid brown;
+	left: calc(50% - 210px);
+	right: calc(50% - 210px);
+	top: 10px;
+	bottom: calc(100% - 430px);
 }
 
 .item {
-	width: calc(100% / 8);
-	height: calc(100% / 8);
+	width: 50px;
+	height: 50px;
 	position: absolute;
 }
 
 .second-g {
-	top: calc(100% / 8);
+	top: 50px;
 }
 
 .therd-g {
-	top: calc((100% / 8) * 2);
+	top: 100px;
 }
 
 .fours-g {
-	top: calc((100% / 8) * 3);
+	top: 150px;
 }
 
 .fivs-g {
-	top: calc((100% / 8) * 4);
+	top: 200px;
 }
 
 .sixis-g {
-	top: calc((100% / 8) * 5);
+	top: 250px;
 }
 
 .sevens-g {
-	top: calc((100% / 8) * 6);
+	top: 300px;
 }
 
 .eingts-g {
-	top: calc((100% / 8) * 7);
+	top: 350px;
 }
 
 .second-v {
-	left: calc(100% / 8);
+	left: 50px;
 }
 
 .therd-v {
-	left: calc((100% / 8) * 2);
+	left: 100px;
 }
 
 .fours-v {
-	left: calc((100% / 8) * 3);
+	left: 150px;
 }
 
 .fivs-v {
-	left: calc((100% / 8) * 4);
+	left: 200px;
 }
 
 .sixis-v {
-	left: calc((100% / 8) * 5);
+	left: 250px;
 }
 
 .sevens-v {
-	left: calc((100% / 8) * 6);
+	left: 300px;
 }
 
 .eingts-v {
-	left: calc((100% / 8) * 7);
+	left: 350px;
 }
 
 .black {
