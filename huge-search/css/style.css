@@ -42,7 +42,7 @@ body {
 	background-size: 85px 85px;
 	background-image: url(../img/magnifier.svg);
 	background-repeat: no-repeat;
-	background-position: 50% 30%;
+	background-position: 50% 50%;
 }
 
 .submit:hover {
