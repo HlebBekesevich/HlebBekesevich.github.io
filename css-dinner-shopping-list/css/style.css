@@ -16,20 +16,28 @@ body {
 
 .list {
 	background: #88839E;
-	font-size: 0;
 	width: 60%;
 	margin: 50px auto;
+	font-size: 25px;
 }
 
 .check {
 	zoom: 300%;
 	display: inline;
+	vertical-align: middle;
 }
 
-.check:checked + .item{
-    background: #625E77;
+.check:checked + .item {
     opacity: .6;
     text-decoration: line-through;
+}
+
+.item {
+	cursor: pointer;
+}
+
+.elemets1 {
+    background: #625E77;
 }
 
 .small {
@@ -44,20 +52,11 @@ body {
 	font-size: 20px;
 }
 
-.items {
-	font-size: 20px;
-	padding: 10px;
-	list-style: none;
-	display: inline-block;
-	width: 100%;
-	cursor: pointer;
-}
-
 .Bon {
 	background: #4A4F56;
 	margin: auto;
 	width: 60%;
-	padding: 10px;
+	padding: 25px;
 	color: #EB7E7F;
 	display: block;
 	font-size: 25px;
@@ -65,17 +64,20 @@ body {
 	cursor: pointer;
 }
 
-.item {
-	display: inline-block;
-	cursor: pointer;
+.items {
+	list-style: none;
 	width: 100%;
+	font-size: 20px;
+	padding: 10px;
+	border-top: 5px solid rgba(255,255,255,0);
+	border-bottom: 5px solid rgba(255,255,255,0);
 }
 
-.item:hover {
-	border-top: 5px solid white;
-	border-bottom: 5px solid white;
+.items:hover {
+	border-top: 5px solid rgba(255,255,255,1);
+	border-bottom: 5px solid rgba(255,255,255,1);
 }
 
-.item:active {
+.items:active {
 	background: #EB7E7F;
 }
