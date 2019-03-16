@@ -13,73 +13,51 @@ body {
 }
 
 .desk {
-	position: absolute;
+	position: relative;
+	max-width: 420px;
+	max-height: 420px;
+	margin: auto;
 	border: 10px solid brown;
-	left: calc(50% - 210px);
-	right: calc(50% - 210px);
-	top: 10px;
-	bottom: calc(100% - 430px;);
 }
 
 .item {
 	width: 50px;
 	height: 50px;
-	position: absolute;
+	position: relative;
 }
 
 .second-g {
-	top: 50px;
-}
-
-.therd-g {
-	top: 100px;
-}
-
-.fours-g {
-	top: 150px;
-}
-
-.fivs-g {
-	top: 200px;
-}
-
-.sixis-g {
-	top: 250px;
-}
-
-.sevens-g {
-	top: 300px;
-}
-
-.eingts-g{
-	top: 350px;
-}
-
-.second-v {
+	top: -400px;
 	left: 50px;
 }
 
-.therd-v {
+.therd-g {
+	top: -800px;
 	left: 100px;
 }
 
-.fours-v {
+.fours-g {
+	top: -1200px;
 	left: 150px;
 }
 
-.fivs-v {
+.fivs-g {
+	top: -1600px;
 	left: 200px;
 }
 
-.sixis-v {
+.sixis-g {
+	top: -2000px;
 	left: 250px;
 }
 
-.sevens-v {
+.sevens-g {
+	top: -2400px;
 	left: 300px;
 }
 
-.eingts-v{
+.eingts-g{
+	top: -2800px;
 	left: 350px;
 }
 

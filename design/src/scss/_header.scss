@@ -1,0 +1,40 @@
+.first-screen {
+	min-height: 100vh;
+	background: $corp-blue url("../img/hero-bg.jpg") no-repeat;
+	background-size: cover;
+
+	.row {
+		display: flex;
+		flex-direction: column;
+
+		& > * {
+			text-align: center;
+		}
+
+		.logo {
+			flex-grow: 1;
+
+		}
+
+		&__title {
+			flex-grow: 1;
+
+		}
+
+		&__text {
+			flex-grow: 1;
+
+		}
+
+		&__btn {
+			flex-grow: 1;
+
+			& > * {
+				display: block;
+				background-image: url("..img/scroll.svg") no-repeat;
+				background-size: 87%;
+			}
+		}
+
+	}
+}
