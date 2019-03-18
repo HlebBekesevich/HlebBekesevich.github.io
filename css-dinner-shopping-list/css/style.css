@@ -27,17 +27,23 @@ body {
 	vertical-align: middle;
 }
 
-.check:checked + .item {
+.check:checked ~ * {
     opacity: .6;
     text-decoration: line-through;
 }
 
 .item {
+	padding-left: 10px;
+	align-items: center;
+	min-height: 70px;
+	display: flex;
 	cursor: pointer;
+	border-top: 5px solid rgba(255,255,255,0);
+	border-bottom: 5px solid rgba(255,255,255,0);
 }
 
 .elemets1 {
-    background: #625E77;
+    background: #625E80;
 }
 
 .small {
@@ -68,12 +74,10 @@ body {
 	list-style: none;
 	width: 100%;
 	font-size: 20px;
-	padding: 10px;
-	border-top: 5px solid rgba(255,255,255,0);
-	border-bottom: 5px solid rgba(255,255,255,0);
 }
 
-.items:hover {
+.item:hover {
+	background: #625E77;
 	border-top: 5px solid rgba(255,255,255,1);
 	border-bottom: 5px solid rgba(255,255,255,1);
 }

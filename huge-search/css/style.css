@@ -11,6 +11,7 @@ body {
 	font-family: Arial, sans-serif;
 	color: #c2c2c2;
 	padding-top: 5%;
+	min-height: 140vh;
 }
 
 .content, .block, .form{
@@ -66,7 +67,7 @@ body {
 
 .colum_name {
 	margin-bottom: 7%;
-	font-size: 12pt;
+	font-size: 16px;
 	font-weight: 800;
 	text-transform: uppercase;
 }
@@ -106,10 +107,6 @@ body {
 
 .popular {
 	margin-right: 5%;
-}
-
-.content {
-	margin-bottom: 10%;
 }
 
 .img {
