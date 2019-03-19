@@ -14,8 +14,8 @@ body {
 
 .desk {
 	position: relative;
-	max-width: 420px;
-	max-height: 420px;
+	min-width: 420px;
+	min-height: 420px;
 	margin: auto;
 	border: 10px solid brown;
 }
@@ -23,41 +23,34 @@ body {
 .item {
 	width: 50px;
 	height: 50px;
-	position: relative;
+	position: absolute;
 }
 
 .second-g {
-	top: -400px;
 	left: 50px;
 }
 
 .therd-g {
-	top: -800px;
 	left: 100px;
 }
 
 .fours-g {
-	top: -1200px;
 	left: 150px;
 }
 
 .fivs-g {
-	top: -1600px;
 	left: 200px;
 }
 
 .sixis-g {
-	top: -2000px;
 	left: 250px;
 }
 
 .sevens-g {
-	top: -2400px;
 	left: 300px;
 }
 
 .eingts-g{
-	top: -2800px;
 	left: 350px;
 }
 
