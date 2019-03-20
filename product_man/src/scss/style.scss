@@ -13,7 +13,7 @@ html, body {
 
 body {
 	font-size: 100%;
-	font-family: Roboto bold, sans-serif;
+	font-family: Roboto, sans-serif;
 	color: #303030;
 	background-color: #eeeeee;
 }
@@ -27,35 +27,29 @@ body {
 .black_white {
 	width: 100%;
 	margin: auto;
-	font-size: 0;
+	padding: 100px 0;
 
 	&__list {
-		padding: 0;
 		margin-bottom: 90px;
-	}
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
 
+	}
 	&__item {
-		display: inline-block;
 		list-style: none;
 		font-size: 18px;
-		position: relative;
+		letter-spacing: 0px;
+		line-height: 27px;
 
 		&:first-child {
 			font-size: 48px;
-			font-weight: bold;
 			letter-spacing: 1px;
+			line-height: 27px;
+			color: #303030;
+			font-weight: 900;
 		}
 
-		&:not(:first-child) {
-			left: 571px;
-			bottom: 7px;
-			margin-right: 50px;
-			letter-spacing: 0.5px;
-		}
-
-		&:last-child {
-			margin-left: -15px;
-		}
 	}
 
 	&__link {
