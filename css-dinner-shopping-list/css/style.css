@@ -14,11 +14,15 @@ body {
 	color: white;
 }
 
+.form {	
+	width: 60%;
+	margin: auto;
+}
+
 .list {
 	background: #88839E;
-	width: 60%;
-	margin: 0 auto 50px;
 	font-size: 25px;
+	margin-bottom: 50px;
 }
 
 .check {
@@ -61,9 +65,8 @@ body {
 }
 
 .Bon {
+	width: 100%;
 	background: #4A4F56;
-	margin: auto;
-	width: 60%;
 	padding: 25px;
 	color: #EB7E7F;
 	display: block;

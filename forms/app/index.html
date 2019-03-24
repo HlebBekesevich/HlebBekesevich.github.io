@@ -36,28 +36,32 @@
 					<p class="formpay__text">Credit card number</p>
 					<input pattern="[0-9]{16,16}" class="formpay__vvod card" type="text" required>
 					<p class="formpay__text">Expiration date</p>
-					<select class="formpay__vvod month">
-						<option value="Month">Month</option>
-						<option value="January">January</option>
-						<option value="February">February</option>
-						<option value="March">March</option>
-						<option value="April">April</option>
-						<option value="May">May</option>
-						<option value="June">June</option>
-						<option value="July">July</option>
-						<option value="August">August</option>
-						<option value="September">September</option>
-						<option value="October">October</option>
-						<option value="November">November</option>
-						<option value="December">December</option>
-					</select>
-					<select class="formpay__vvod year">
-						<option value="Year">Year</option>
-						<option value="2016">2019</option>
-						<option value="2017">2020</option>
-						<option value="2018">2021</option>
-						<option value="2019">2022</option>
-					</select>
+					<label for="#" class="lable_month">
+						<select class="formpay__vvod month">
+							<option value="Month">Month</option>
+							<option value="January">January</option>
+							<option value="February">February</option>
+							<option value="March">March</option>
+							<option value="April">April</option>
+							<option value="May">May</option>
+							<option value="June">June</option>
+							<option value="July">July</option>
+							<option value="August">August</option>
+							<option value="September">September</option>
+							<option value="October">October</option>
+							<option value="November">November</option>
+							<option value="December">December</option>
+						</select>
+					</label>
+					<label for="#" class="lable_year">
+						<select class="formpay__vvod year">
+							<option value="Year">Year</option>
+							<option value="2016">2019</option>
+							<option value="2017">2020</option>
+							<option value="2018">2021</option>
+							<option value="2019">2022</option>
+						</select>
+					</label>
 					<p class="formpay__text">CVV</p>
 					<input type="text" class="formpay__vvod cvv" required pattern="[0-9]{3,4}"">
 					<p class="formpay__text cvv">3 or 4 digits - <a class="formpay__link" href="#">view example</a></p>

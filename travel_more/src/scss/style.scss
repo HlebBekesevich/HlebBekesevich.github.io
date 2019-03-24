@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url("..fonts/aleo");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	width: 100%;
+}
+
+body {
+	border: 10px white solid;
+}
+
+.cont {
+	min-width: 1040px;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.head {
+	background: url("../img/header-bg.png");
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	font-family: "Josefin Sans";
+	line-height: 26px;
+
+	&__h1 {
+		font-size: 48px;
+		letter-spacing: 5px;		
+		font-weight: 700;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+
+	&__h2 {
+		font-size: 22px;
+		letter-spacing: 7px;		
+		font-weight: 50;
+		margin-bottom: 45px;
+	}
+
+	&__form {
+		display: flex;
+		border: 2px white solid;
+		width: 48%;
+		justify-content: center;
+		margin-bottom: 10%;
+	}
+
+	&__input {
+		text-align: center;
+		padding: 20px;
+		border: none;
+		outline: none;
+		width: 78%;
+
+		&::-webkit-input-placeholder {
+			font-size: 14px;
+			letter-spacing: 3px;
+			color: #999999;
+		}
+	}
+
+	&__btn-div {
+		background: #5474FD;
+		height: 55px;
+		width: 22%;
+		cursor: pointer;
+
+		&::after {
+			content: " ";
+			display: inline-block;
+			vertical-align: middle;
+			height: 22px;
+			width: 20px;
+			background-size: 22px 22px;
+			background-image: url("../img/search-icon.svg");
+			background-repeat: no-repeat;
+			background-position: 0 0;
+		}
+	}
+
+	&__btn-input {
+		background: #5474FD;
+		height: 55px;
+		width: 75%;
+		color: #ffffff; 
+		border: none;
+		outline: none;
+		font-size: 14px;
+		letter-spacing: 1px;				
+		font-family: "Aleo";
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	&__link {
+		display: block;
+		text-decoration-line: none;
+		color: #ffffff;
+		font-size: 14px;
+		letter-spacing: 3px;
+		line-height: 26px;
+
+		&::after {
+			content: "";
+			display: block;
+			margin: auto;
+			width: 15px;
+			height: 10px;
+			cursor: pointer;
+			background-repeat: no-repeat;
+			background-image: url("../img/scroll.svg");
+		}
+	}
+}
+
+.nav {
+	background-color: #5474FD;
+	width: 100%;
+	padding: 25px;
+
+	&__bar {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__link-b {
+		display: block;
+		width: 50%;
+	}
+
+	&__link-g {
+		text-decoration-line: none;
+		color: #ffffff;
+		font-size: 24px;
+		letter-spacing: 2px;
+		line-height: 26px;
+		font-family: "Josefin Sans";
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	&__link-s {
+		text-decoration-line: none;
+		color: #ffffff;
+		font-size: 14px;
+		line-height: 26px;
+		font-family: "Aleo";
+		text-transform: uppercase;
+	}
+}
+
+.choose {
+	height: 100vh;
+	background-image: url("../img/choose-bg.png");
+	padding: 100px;
+}
+
+.box {
+	display: flex;
+	justify-content: space-between;
+
+	&__text {
+		width: 45%;
+	}
+
+	&__head {
+		padding-top: 16vh;
+		margin-bottom: 10vh;
+		font-size: 36px;
+		line-height: 26px;
+		color: #ffffff;
+		font-family: "Aleo";
+	}
+
+	&__ph {
+		font-size: 16px;
+		letter-spacing: 2px;
+		line-height: 26px;
+		color: #e8e8e8;
+		margin-bottom: 4vh;
+		font-family: "Josefin Sans";
+		font-weight: 100;
+
+		&:nth-last-child(2) {
+			margin-bottom: 6vh;
+		}
+	}
+
+	&__btn {
+		background: #5474FD;
+		height: 55px;
+		width: 45%;
+		color: #ffffff; 
+		border: none;
+		outline: none;
+		font-size: 16px;
+		letter-spacing: 1px;
+		line-height: 26px;
+		font-family: "Aleo";
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	&__img {
+	}
+}
