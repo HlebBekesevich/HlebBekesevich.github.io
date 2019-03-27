@@ -78,9 +78,15 @@ html {
 .formpay__vvod.month {
 	width: 175px;
 	margin-right: 20px;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
 }
 .formpay__vvod.year {
 	width: 100px;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
 }
 .formpay__vvod.cvv {
 	display: inline-block;
@@ -122,13 +128,30 @@ html {
 .lable_year {
 	position: relative;
 }
-.lable_year ::after {
+.lable_year::after {
 	font-size: 16px;
 	position: absolute;
-	top: 18.5px;
-	right: 10px;
 	display: block;
-	content: " ";
+	right: 10px;
+	top: -8px;
+	content: "";
+	pointer-events: none;
+	opacity: .3;
+	border: 7px solid transparent;
+	border-top: 7px solid black;
+	background-color: transparent;
+}
+
+.lable_month {
+	position: relative;
+}
+.lable_month::after {
+	font-size: 16px;
+	position: absolute;
+	display: block;
+	right: 30px;
+	top: -8px;
+	content: "";
 	pointer-events: none;
 	opacity: .3;
 	border: 7px solid transparent;
