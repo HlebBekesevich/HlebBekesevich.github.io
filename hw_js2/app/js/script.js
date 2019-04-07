@@ -1,19 +1,17 @@
 ;(function(){
-	let first = +prompt('First number'), k, last = +prompt('Last number'), i;
+	let first = prompt('First number'), last = prompt('Last number'), i;
+    let arr = [];
 	function simple(first, last) 
 	{
 		for(i=first;i<=last;i++)
 		{
-			if(i<=1) continue;
-			for(k=2;k<i;k++) {
-				if(i%k==1)
-				{
-					alert(i);
-					i++;
-					k=2;
-				}
+			if(i<2) continue;
+			if((i%2)&&(i%3)&&(i%5))
+			{
+				arr.push(i);
 			}
 		}
+		return arr;
 	}
-	simple(first, last);
+	alert(simple(first, last));
 })();
