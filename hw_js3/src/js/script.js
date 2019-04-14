@@ -4,7 +4,7 @@
 	function map(fn, array) {
 		let new_arr = [];
 		for (let i=0;i<array.length;i++)
-			new_arr[i]=fn(array[i]);
+			new_arr.push(fn(array[i]));
 		return new_arr;
 	}
 
