@@ -31,7 +31,7 @@ body {
 	padding: 100px 0;
 }
 .black_white__list {
-	margin-bottom: 90px;
+	margin-bottom: 110px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -54,55 +54,50 @@ body {
 	line-height: 27px;
 	color: #303030;
 	font-weight: 900;
+	-ms-flex-preferred-size: 800px;
+	flex-basis: 800px;
 }
 .black_white__link {
 	text-decoration: none;
 	color: black;
 }
 .black_white__body {
-	display: inline-block;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	width: 100%;
+	max-width: 1096px;
 	min-height: 491px;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 .black_white__img {
-	display: inline-block;
 	min-height: 391px;
-	width: 362px;
+	-ms-flex-preferred-size: 379px;
+	flex-basis: 379px;
 }
 .black_white__text {
-	display: inline-block;
-	max-width: 618px;
-	min-height: 391px;
 	font-size: 24px;
 	text-align: right;
-	margin-right: 103px;
 }
 .black_white__text h1 {
-	display: inline-block;
-	max-width: 615px;
 	font-size: 150px;
 	text-transform: uppercase;
 	font-family: Raleway;
 	text-align: end;
-	font-weight: 1000;
-	letter-spacing: 2.5px;
 	line-height: 150px;
-	margin-bottom: 25px;
+	letter-spacing: 4px;
+	font-weight: 900;
 }
 .black_white__text p {
 	font-weight: 100;
-	display: inline-block;
-	width: 575px;
 	letter-spacing: .45px;
 	line-height: 35px;
 }
 .black_white__text a {
-	position: relative;
-	display: block;
 	color: red;
 	text-decoration: none;
 	font-weight: 600;
 	letter-spacing: .5px;
-	margin-top: 40px;
-	bottom: 20px;
 }

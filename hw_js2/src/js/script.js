@@ -15,7 +15,7 @@
 		else return arr;
 		for(;i<=last;i++)
 		{
-			if((i%2)&&(i%3)&&(i%5))
+			if((i%2)&&(i%3)&&(i%5)&&(i%7))
 				arr.push(i);
 		}
 		return arr;
