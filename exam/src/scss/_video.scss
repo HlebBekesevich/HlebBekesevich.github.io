@@ -9,8 +9,8 @@
 		min-height: 80vh;
 		width: 80vh;
 		opacity: .1;
-		top: 45px;
-		right: 70px;
+		top: 5vh;
+		right: 7%;
 	}
 	&:before {
 		content: "";
@@ -29,13 +29,23 @@
 	position: relative;
 	width: 100%;
 	min-height: 90vh;
+	max-height: 915px;
 	padding: 9vh 0;
 	&__row {
+		position: relative;
 		display: flex;
 		flex-direction: row;
-		padding: 2vh 9% 1.8vh 12%;
+		padding: 12vh 9% 12%;
 		min-height: 72vh;
+		max-height: 735px;
 		border: 1px solid $corp-color;
+		&:before {
+			content: "";
+			@include line ($c: $white, $w: 1px, $h: 150px);
+			position: absolute;
+			right: 100px;
+			top: calc(50% - 50px;);
+		}
 	}
 
 	&__container {
@@ -46,14 +56,23 @@
 	&__text {
 		&_line {
 			max-width: 150px;
-			padding-left: 30px;
+			padding-right: 30px;
 			width: 13%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			&_head {
+				margin-top: 30px;
+				@include line($c: $white, $w: 100%)
+			}
+
+			&_text {
+				margin-top: calc(4vh + 100px);
+				@include line($h: 4px, $w: 44px)
+			}
 		}
 
 		&_text {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
 			max-width: 515px;
 			&_head {
 				text-transform: uppercase;
