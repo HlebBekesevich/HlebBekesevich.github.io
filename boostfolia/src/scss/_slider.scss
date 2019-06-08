@@ -1,0 +1,109 @@
+.slider {
+	background-color: $dark;
+	min-height: 100vh;
+}
+
+.slider_2 {
+	background-color: rgba($dark, .8);
+	min-height: 100vh;
+
+	&:before {
+		content: "";
+		background-image: url('../img/paris.jpg');
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		filter: grayscale(100%);
+		opacity: .3;
+	}
+
+}
+
+.slider_3 {
+	background-color: rgba($dark, .8);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	filter: grayscale(100%);
+	min-height: 100vh;
+
+	&:before {
+		content: "";
+		background-image: url('../img/city.jpg');
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		opacity: .8;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		filter: grayscale(100%);
+	}
+}
+
+.text {
+	text-transform: uppercase;
+	font-family: "BigNoodleTitling";
+	color: $text-slider;
+}
+
+.big {
+	padding-top: 45vh;
+	font-size: 72px;
+	letter-spacing: 12px;
+}
+
+.small {
+	margin-bottom: 25vh;
+	font-size: 36px;
+	letter-spacing: 5px;
+}
+
+.mouse {
+	margin-bottom: 3vh;
+}
+
+.scroll_text {
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	font-size: 12px;
+	color: $white;
+	letter-spacing: 1px;
+
+	&:hover {
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+.carousel-control-next-icon {
+	opacity: .1;
+	background-image: none;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-right: 5px solid $white;
+	border-bottom: 5px solid $white;
+	transform: rotate(315deg);
+	border-radius: 5px;
+}
+
+.carousel-control-prev-icon {
+	opacity: .1;
+	background-image: none;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-left: 5px solid $white;
+	border-top: 5px solid $white;
+	transform: rotate(315deg);
+	border-radius: 5px;
+}

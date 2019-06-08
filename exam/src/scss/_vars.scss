@@ -1,0 +1,129 @@
+
+//////////////////////////////////////////////
+////////////////////FONTS/////////////////////
+//////////////////////////////////////////////
+
+@font-face {
+	font-family: 'Proxima Nova Regular';
+	src: url('../fonts/ProximaNova-Regular.eot');
+	src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ProximaNova-Regular.woff') format('woff'),
+	url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Proxima Nova Bold';
+	src: url('../fonts/ProximaNova-Bold.eot');
+	src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ProximaNova-Bold.woff') format('woff'),
+	url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+//////////////////////////////////////////////
+////////////////////FONTS/////////////////////
+//////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////
+////////////////////COLOR/////////////////////
+//////////////////////////////////////////////
+
+$white: #ffffff;
+$black: #000000;
+$corp-color: #bea67c;
+$grey: #818181;
+$light-grey: #464646;
+$opacity-grey: #d0d0d0;
+$video-grey: #636262;
+$video-border: #E5E5E5;
+
+//////////////////////////////////////////////
+////////////////////COLOR/////////////////////
+//////////////////////////////////////////////
+
+
+//////////////////////////////////////////////
+////////////////////MIXINS////////////////////
+//////////////////////////////////////////////
+
+@mixin line($c: $corp-color, $w: 50px, $h: 1px) {
+	background-color: $c;
+	width: $w;
+	height: $h;
+}
+
+
+@mixin main_img {
+	content: "";
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+	filter: brightness(10%);
+	z-index: -1;
+}
+
+@mixin video_img {
+	@media (max-width: 992px) {	
+		height: 145px;
+		width: 145px;
+	}
+	position: relative;
+	filter: brightness(80%);
+	height: 245px;
+	width: 245px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	&:before {
+		@media (max-width: 992px) {	
+			height: 49px;
+			width: 49px;
+			top: 48px;
+			left: 48px;
+		}
+		position: absolute;
+		content: "";
+		display: block;
+		width: 69px;
+		height: 69px;
+		border-radius: 50%;
+		background-color: $corp-color;
+		top: 88px;
+		left: 88px;
+	}
+	&:after {
+		@media (max-width: 992px) {	
+			border-top: 8px solid transparent;
+			border-left: 15px solid $white;
+			border-bottom: 8px solid transparent;
+			top: 64px;
+			left: 67px;
+		}
+		top: 110px;
+		left: 115px;
+		position: absolute;
+		content: "";
+		width: 0;
+		height: 0;
+		border-top: 12px solid transparent;
+		border-left: 20px solid $white;
+		border-bottom: 12px solid transparent;
+	}
+	&:hover {		
+		filter: brightness(90%);
+		cursor: pointer;
+	}
+}
+
+//////////////////////////////////////////////
+////////////////////MIXINS////////////////////
+//////////////////////////////////////////////
+

@@ -1,0 +1,44 @@
+
+.head {
+	z-index: 10000000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba($corp-color, .25);
+	padding: 16px 0;
+
+	&__link {
+		&_text {
+			@media (max-width: 768px) {
+				display: none;
+			}
+			color: $grey;
+			text-transform: uppercase;
+			letter-spacing: 0px;
+			font-family: 'Proxima Nova Bold';
+			text-align: center;
+			padding: 10px 0;
+			&:hover {
+				color: $white;
+			}
+
+			&_logo {
+				font-size: 40px;
+				letter-spacing: 11px;
+				color: $white;
+				font-family: 'Proxima Nova Bold';
+				text-transform: uppercase;
+				position: relative;
+				&:before {
+					display: block;
+					content: "";
+					@include line($w: 70px, $h: 4px);
+					position: absolute;
+					top: 17px;
+					left: 48px;
+				}
+			}
+		}
+	}
+}

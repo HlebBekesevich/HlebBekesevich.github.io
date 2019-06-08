@@ -1,0 +1,30 @@
+.header {
+	background-color: #F8F6F6;
+	color: $text-head;
+	font-size: 30px;
+	padding: 2% 0;
+	margin-bottom: 5px;
+	box-shadow: 0 5px 0 #EDEBEB;
+}
+
+.logo_img {
+	width: 14%;
+	height: 14%;
+	margin-right: 25px;
+}
+
+.logo {
+	display: flex;
+	font-weight: 100;
+	letter-spacing: 4px;
+	font-size: 40px;
+	font-family: "BigNoodleTitling";
+	text-decoration: none;
+	color: $text-head;
+
+	&:hover {
+		text-decoration: none;
+		color: $text-head;
+	}
+}
+

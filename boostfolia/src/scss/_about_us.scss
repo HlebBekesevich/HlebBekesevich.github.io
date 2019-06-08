@@ -1,0 +1,66 @@
+.head {
+	text-transform: uppercase;
+	font-family: "BigNoodleTitling";
+	font-size: 48px;
+	color: $dark;
+	letter-spacing: 5px;
+	text-align: center;
+	margin-bottom: 0px;
+	padding-top: 10vh;
+}
+
+.about_us {
+	min-height: 90vh;
+}
+
+.about_text {
+	font-size: 14px;
+	color: #696969;
+	font-family: "Roboto";
+	font-weight: 250;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.line {
+	margin-top: 0;
+	background-color: #F6744B;
+	height: 1px;
+	width: 155px;
+	margin-bottom: 2em;
+}
+
+.thems {
+	min-height: 35vh;
+	margin: 0 -30px;
+	background-color: #EBEBEB;
+	font-size: 14px;
+	letter-spacing: 0px;
+	color: #707070;
+	font-family: "Roboto";
+	font-weight: 250;
+	text-align: center;
+	line-height: 18px;
+}
+
+.heads {
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 18px;
+}
+
+.thems-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50%;
+}
+
+.first {
+	margin-left: 0;
+}
+
+.last {
+	margin-right: 0;
+}

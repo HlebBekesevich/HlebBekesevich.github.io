@@ -1,0 +1,24 @@
+* {
+	transition: all 0.5s ease;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+.pol {
+	width: 52%;
+	padding: 0 15px;
+	@media (max-width: 992px) {
+		width: 100%;
+		margin: auto;
+	}
+}
+
+.pol-t {
+	width: 48%;
+	@media (max-width: 992px) {
+		width: 100%;
+		margin: auto;
+	}
+}
