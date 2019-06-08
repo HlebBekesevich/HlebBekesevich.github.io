@@ -132,8 +132,7 @@
 		position: relative;
 		filter: brightness(40%);
 		filter: grayscale(40%);
-		min-height: 200px;
-		min-width: 300px;
+		min-height: 300px;
 		background-image: url(../img/decor.png);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -151,7 +150,6 @@
 			color: $opacity-grey;
 			font-family: 'Proxima Nova Bold';
 			opacity: .2;
-			overflow: visible;
 		}
 	}
 }
