@@ -155,8 +155,10 @@ a:hover {
 	        transition: all .5s ease;
 }
 
-html {
+html,
+body {
 	overflow-x: hidden;
+	width: 100%;
 }
 
 .pol {
@@ -1152,6 +1154,19 @@ html {
 	min-height: 90vh;
 	padding: 9vh 0;
 }
+.video:after {
+	position: absolute;
+	display: block;
+	content: "";
+	background-image: url(../img/icon.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 80vh;
+	width: 80vh;
+	opacity: .1;
+	top: 45px;
+	right: 70px;
+}
 .video:before {
 	content: "";
 	position: absolute;
@@ -1208,6 +1223,7 @@ html {
 	letter-spacing: 1px;
 	color: #bea67c;
 	font-family: "Proxima Nova Bold";
+	margin-bottom: 4vh;
 }
 .video__text_text_text {
 	font-size: 15px;
@@ -1215,6 +1231,7 @@ html {
 	line-height: 25px;
 	color: #fff;
 	font-family: "Proxima Nova Regular";
+	margin-bottom: 4vh;
 }
 .video__text_btn {
 	max-width: 300px;
@@ -1240,4 +1257,11 @@ html {
 	letter-spacing: 3px;
 	color: #fff;
 	font-family: "Proxima Nova Bold";
+}
+
+.far {
+	height: 24px;
+	width: 24px;
+	margin-right: 10px;
+	color: #fff;
 }

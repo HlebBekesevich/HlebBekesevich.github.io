@@ -1,4 +1,17 @@
 .video {
+	&:after {
+		position: absolute;
+		display: block;
+		content: "";
+		background-image: url(../img/icon.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 80vh;
+		width: 80vh;
+		opacity: .1;
+		top: 45px;
+		right: 70px;
+	}
 	&:before {
 		content: "";
 		position: absolute;
@@ -49,6 +62,7 @@
 				letter-spacing: 1px;
 				color: $corp-color;
 				font-family: 'Proxima Nova Bold';
+				margin-bottom: 4vh;
 			}
 			&_text {
 				font-size: 15px;
@@ -56,6 +70,7 @@
 				line-height: 25px;
 				color: $white;
 				font-family: 'Proxima Nova Regular';
+				margin-bottom: 4vh;
 			}
 		}
 		&_btn {
@@ -78,4 +93,11 @@
 			}
 		}
 	}
+}
+
+.far {
+	height: 24px;
+	width: 24px;
+	margin-right: 10px;
+	color: $white;
 }
