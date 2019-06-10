@@ -1,14 +1,14 @@
 .main {
 	margin-bottom: 135px;
 	&:before {
-		background-image: url(../img/1.png);
+		background-image: url(../img/1.jpg);
 		@include main_img;
 		left: 0;
 		right: 44.5%;
 		min-height: 100vh;
 	}
 	&:after {
-		background-image: url(../img/2.png);
+		background-image: url(../img/2.jpg);
 		@include main_img;
 		left: 54.5%;
 		right: 0;
