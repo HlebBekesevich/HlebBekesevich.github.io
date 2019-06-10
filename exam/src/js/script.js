@@ -238,16 +238,21 @@ function initMap()
 
 $(".contacts__map_icon").click(function(){
 	initMap();
-	$(".contacts__map").toggleClass("active");
-	$("html, body").scrollTop(document.documentElement.scrollHeight-document.documentElement.clientHeight);
+	$(".none").toggleClass("active");
 });
 
 
 window.onscroll = () => {
-    if (window.pageYOffset >= document.documentElement.scrollHeight-document.documentElement.clientHeight-20){
+    if (window.pageYOffset >= document.documentElement.scrollHeight-document.documentElement.clientHeight-80){
     	$(".contacts__map_icon").addClass("active");
     	console.log("add");
     } else {
     	$(".contacts__map_icon").removeClass("active");
   }
 }
+
+
+$(".contact_link").click(function(){
+	initMap();
+	$(".none").addClass("active");
+});

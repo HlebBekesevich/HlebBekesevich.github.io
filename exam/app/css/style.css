@@ -1459,13 +1459,14 @@ body {
 	opacity: .2;
 }
 
+.contacts {
+	background-color: #fff;
+	padding: 80px 0;
+}
 .contacts__map {
-	display: none;
+	margin-bottom: 20px;
 	max-width: 100%;
 	min-height: 300px;
-}
-.contacts__map.active {
-	display: block;
 }
 .contacts__map_icon {
 	position: fixed;
@@ -1476,21 +1477,16 @@ body {
 	background-color: #bea67c;
 	color: #fff;
 	cursor: pointer;
-	display: none;
 	z-index: 10;
-}
-.contacts__map_icon .fas {
-	padding: 5px;
-}
-.contacts__map_icon .fas:hover {
-	color: #fff;
+	display: none;
 }
 .contacts__map_icon.active {
 	display: block;
 }
-
+.contacts__map_icon .fas {
+	padding: 5px;
+}
 .contacts__info {
-	height: 100px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1510,18 +1506,22 @@ body {
 .contacts__info_link {
 	color: #000;
 }
-.contacts__info:hover span {
-	border-bottom: none;
-}
-.contacts__info:hover .contacts__info_link {
+.contacts__info_link:hover {
 	font-family: "Proxima Nova Bold";
 	color: #bea67c;
 }
 .contacts__info_text {
-	font-family: "Proxima Nova Bold";
+	font-family: "Proxima Nova Regular";
 	font-size: 18px;
 	color: #000;
-	border-bottom: 2px solid #bea67c;
+}
+
+.none {
+	display: none;
+}
+.none.active {
+	display: block;
+	background-color: #fff;
 }
 
 .footer {
