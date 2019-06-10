@@ -269,6 +269,7 @@ window.onscroll = () => {
 	if (window.pageYOffset >= document.documentElement.scrollHeight-document.documentElement.clientHeight-500){
 		$(".contacts__map_icon").addClass("active");
 		$(".up").addClass("active");
+		console.log("add");
 	} else {
 		$(".contacts__map_icon").removeClass("active");
 		$(".up").removeClass("active");
