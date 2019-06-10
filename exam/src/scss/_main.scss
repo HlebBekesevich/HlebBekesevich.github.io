@@ -7,7 +7,6 @@
 		right: 44.5%;
 		min-height: 100vh;
 	}
-
 	&:after {
 		background-image: url(../img/2.png);
 		@include main_img;
@@ -15,26 +14,19 @@
 		right: 0;
 		min-height: 105vh;
 	}
-
 	&__row{
 		padding-top: 30vh;
 		@media (max-height: 700px) {
 			padding-top: 15vh;
 		}
 	}
-
 	&__left{
-
-		@media (max-height: 500px) {
-			display: none;
-		}
 		@media (max-width: 768px) {
 			display: none;
 		}
 		&_line{
 			@include line($w: 4px, $h: 50px);
 		}
-
 		&_number {
 			transform: rotate(90deg);
 			display: none;
@@ -45,32 +37,29 @@
 			margin: 30px 0 90px 0;
 			font-family: 'Proxima Nova Bold';
 		}
-
 		&_links {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			min-height: 200px;
-			width: 10px;
 		}
-
 		&_link {
-			@media (min-width: 1200px) {
-				height: 15px;
-				width: 15px;
-			}
-			z-index: 9999999999;
+			z-index: 5;
 			display: block;
 			height: 10px;
 			width: 10px;
 			background-color: $grey;
 			border-radius: 50%;
+			@media (max-width: 768px) {
+				height: 20px;
+				width: 20px;
+				margin-left: -5px;
+			}
 			&:hover {
 				background-color: $corp-color;
 			}
 		}
 	}
-
 	&__center {
 		padding-top: 40px;
 		max-height: 70vh;
@@ -96,7 +85,6 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			margin-bottom: 10px;
 			&:hover {
 				border: 3px solid $white;
 			}

@@ -1,18 +1,13 @@
-
 .head {
-	z-index: 10000000;
+	z-index: 100;
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
 	background-color: rgba($corp-color, .25);
 	padding: 16px 0;
-
 	&__link {
 		&_text {
-			@media (max-width: 768px) {
-				display: none;
-			}
 			color: $grey;
 			text-transform: uppercase;
 			letter-spacing: 0px;
