@@ -266,10 +266,12 @@ $(".contacts__map_icon").click(function(){
 
 
 window.onscroll = () => {
-	if (window.pageYOffset >= document.documentElement.scrollHeight-document.documentElement.clientHeight-200){
+	if (window.pageYOffset >= document.documentElement.scrollHeight-document.documentElement.clientHeight-500){
 		$(".contacts__map_icon").addClass("active");
+		$(".up").addClass("active");
 	} else {
 		$(".contacts__map_icon").removeClass("active");
+		$(".up").removeClass("active");
 	}
 }
 
@@ -288,13 +290,4 @@ function up() {
     t = setTimeout('up()',20);
   } else clearTimeout(t);
   return false;
-}
-
-
-window.onscroll = () => {
-	if (window.pageYOffset >= document.documentElement.scrollHeight-document.documentElement.clientHeight-600){
-		$(".up").addClass("active");
-	} else {
-		$(".up").removeClass("active");
-	}
 }
