@@ -11,35 +11,36 @@
 	<link rel="icon" type="img/png" sizes="16x16" href="img/favicon-16x16.png">
 	<link rel="manifest" href="img/site.webmanifest">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
 	<div class="head">
 		<div class="container">
 			<div class="row">
 				<div class="col-6">
-					<a href="" class="head__link">
+					<a href="#head" class="head__link">
 						<p class="head__link_text_logo">wooder</p>
 					</a>
 				</div>
 				<div class="col-6">
 					<ul class="row">
 						<li class="col-3">
-							<a href="" class="head__link">
+							<a href="#head" class="head__link">
 								<p class="head__link_text">home</p>
 							</a>
 						</li>
 						<li class="col-3">
-							<a href="" class="head__link">
+							<a href="#products" class="head__link">
 								<p class="head__link_text">products</p>
 							</a>
 						</li>
 						<li class="col-3">
-							<a href="" class="head__link">
+							<a href="#about" class="head__link">
 								<p class="head__link_text">about</p>
 							</a>
 						</li>
 						<li class="col-3">
-							<a href="" class="head__link">
+							<a href="#contacts" class="head__link">
 								<p class="head__link_text">contacts</p>
 							</a>
 						</li>
@@ -48,7 +49,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="main">
+	<div id="head" class="main">
 		<div class="container cont">
 			<div class="row main__row">
 				<div class="col-3 main__left">
@@ -59,11 +60,11 @@
 					<p class="main__left_number n4">04</p>
 					<p class="main__left_number n5">05</p>
 					<div class="main__left_links">
-						<a href="" class="main__left_link l1 active"></a>
-						<a href="" class="main__left_link l2"></a>
-						<a href="" class="main__left_link l3"></a>
-						<a href="" class="main__left_link l4"></a>
-						<a href="" class="main__left_link l5"></a>
+						<a href="#head" class="main__left_link l1 active"></a>
+						<a href="#products" class="main__left_link l2"></a>
+						<a href="#video" class="main__left_link l3"></a>
+						<a href="#about" class="main__left_link l4"></a>
+						<a href="#contacts" class="main__left_link l5"></a>
 					</div>
 				</div>
 				<div class="col-6 main__center">
@@ -73,7 +74,7 @@
 							<div class="main__center_btn_line"></div>
 						</p>
 					</a>
-					<a href="" class="main__center_scroll">
+					<a href="#products" class="main__center_scroll">
 						<img src="img/mouse.svg" alt="" class="main__center_scroll_mouse">
 						<div class="main__center_scroll_line"></div>
 						<p class="main__center_scroll_text">scroll</p>
@@ -85,7 +86,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="furniture">
+	<div id="products" class="furniture">
 		<div class="container">
 			<div class="row furniture__row">
 				<div class="pol-t">
@@ -144,7 +145,7 @@
 				<div class="videos__head_line"></div>
 				<p class="videos__head_text">We create unique design objects made of rare wood, specially under the order. Look at the short video about our work.</p>
 			</div>
-			<div class="videos__carusel">
+			<div id="video" class="videos__carusel">
 				<div class="videos__carusel_items autoplay">
 					<div class="col">
 						<div class="videos__carusel_item">
@@ -209,10 +210,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="about">
+	<div id="about" class="about">
 		<div class="container">
-			<div class="about__img about__pol"></div>
-			<div class="about__pol-t">
+			<div class="about__row">
+				<div class="about__img"></div>
 				<div class="about__text">
 					<div class="about__text_line">
 						<div class="about__text_line_head"></div>
@@ -220,7 +221,8 @@
 					</div>
 					<div class="about__text_text">
 						<p class="about__text_text_head">about us</p>
-						<p class="about__text_text_text">We make all types of wooden about as per design given by Architect,Interior designer, contractor </p>
+						<p class="about__text_text_text">We are a team of professionals in the wood processing and the creation of wooden furniture 
+						of the highest class</p>
 						<a href="" class="about__text_btn">
 							<p class="about__text_btn_text">Learn more</p>
 							<div class="about__text_btn_line"></div>
@@ -230,10 +232,68 @@
 			</div>
 		</div>
 	</div>
-</div>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script src="js/script.js"></script>
+	<div id="contacts" class="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="contacts__map"></div>
+					<div class="contacts__map_icon">
+						<i class="fas fa-globe-americas"></i>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					<div class="contacts__info">
+						<div class="contacts__info_icon">
+							<i class="fas fa-mobile"></i>
+						</div>
+						<div class="contacts__info_text">
+							<span>Our phone:</span>
+							<br>
+							<a href="#" class="contacts__info_link">
+								0908300554
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="contacts__info">
+						<div class="contacts__info_icon">
+							<i class="fas fa-envelope"></i>
+						</div>
+						<div class="contacts__info_text">
+							<span>Our e-mail:</span>
+							<br>
+							<a href="#" class="contacts__info_link">
+								support@wooder.com
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-auto">
+					<p class="footer__text">© 2019 WOODER</p>
+				</div>
+				<div class="col-auto">
+					<p class="footer__logo">wooder</p>
+				</div>
+				<div class="col-auto">
+					<p class="footer__text">Designed by <span class="footer__text_name">Hleb Bekesevich</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUJHGC1v19IZNNuymaXkBLVf1YuCywRk8&callback=initMap"
+	async defer></script>
 </body>
 </html>

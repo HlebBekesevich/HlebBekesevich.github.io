@@ -1,8 +1,11 @@
 .about {
-	padding: 140px 0 125px 0;
-	min-height: 65vh;
+	padding: 7.3vh 0 6.5vh 0;
 	&__row {
+		padding-right: 10%;
 		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 		&:after {
 			position: absolute;
 			font-size: 396px;
@@ -10,14 +13,12 @@
 			opacity: .08;
 			color: $corp-color;
 			right: 0;
-			top: -297px;
+			top: -250px;
 			font-family: 'Proxima Nova Bold';
 		}
 	}
 
 	&__text {
-		padding-top: 110px;
-		min-height: 295px;
 		display: flex;
 		justify-content: space-between;
 		&_btn {
@@ -46,7 +47,6 @@
 					content: "";
 					@include line($w: 100%, $h: 2px);
 				}
-
 			}
 			&_line {
 				@include line($w: 35px);
@@ -66,18 +66,18 @@
 				}
 			}
 		}
-
 		&_text {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-
+			max-width: 530px;
 			&_head {
 				text-transform: uppercase;
 				font-size: 48px;
 				letter-spacing: 3px;
 				color: $black;
 				font-family: 'Proxima Nova Bold';
+				margin-bottom: 25px;
 			}
 			&_text {
 				font-size: 15px;
@@ -85,6 +85,7 @@
 				color: $light-grey;
 				font-family: 'Proxima Nova Regular';
 				line-height: 25px;
+				margin-bottom: 30px;
 			}
 		}
 
@@ -92,6 +93,8 @@
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
+			margin-right: 30px;
+			min-width: 155px;
 			&_text {
 				@include line($w: 35%, $h: 4px);
 				margin-top: 47%;
@@ -108,15 +111,19 @@
 		position: relative;
 		filter: brightness(40%);
 		filter: grayscale(40%);
-		min-height: 300px;
+		min-height: 400px;
+		min-width: 529px;
+		width: 45%;
+		margin-right: -80px;
 		background-image: url(../img/about.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-attachment: scroll;
 		background-position: left top;
 		box-shadow: 0 0 10px rgba(0,0,0,.4);
+		z-index: -1;
 		&:before {
-			z-index: 99999;
+			z-index: 9999;
 			content: "aboutus";
 			position: absolute;
 			text-transform: uppercase;

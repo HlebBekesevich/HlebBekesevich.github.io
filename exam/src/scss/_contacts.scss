@@ -1,0 +1,61 @@
+.contacts {
+	&__map {
+		display: none;
+		max-width: 100%;
+		min-height: 300px;
+		&.active {
+			display: block;
+		}
+		&_icon {
+			position: fixed;
+			right: 0;
+			bottom: 20%;
+			width: 60px;
+			font-size: 25px;
+			background-color: $corp-color;
+			color: $white;
+			cursor: pointer;
+			display: none;
+			z-index: 10;
+			.fas {
+				padding: 5px;
+				&:hover{
+					color: $white;
+				}
+			}
+			&.active {
+				display: block;
+			}
+		}
+	}
+	&__info {
+		height: 100px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+		color: $corp-color;
+		font-size: 25px;
+
+		&_link {
+			color: $black;
+		}
+
+		&:hover span {
+			border-bottom: none;
+		}
+
+		&:hover .contacts__info_link {
+			font-family: 'Proxima Nova Bold';
+			color: $corp-color;
+		}
+
+		&_text {
+			font-family: 'Proxima Nova Bold';
+			font-size: 18px;
+			color: $black;
+			border-bottom: 2px solid $corp-color;
+		}
+	}
+}
