@@ -266,7 +266,7 @@ $(".contacts__map_icon").click(function(){
 
 
 window.onscroll = () => {
-	if (window.pageYOffset >= document.documentElement.scrollHeight-document.documentElement.clientHeight-120){
+	if (window.pageYOffset >= document.documentElement.scrollHeight-document.documentElement.clientHeight-200){
 		$(".contacts__map_icon").addClass("active");
 	} else {
 		$(".contacts__map_icon").removeClass("active");
