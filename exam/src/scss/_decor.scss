@@ -19,10 +19,10 @@
 	}
 
 	&__text {
-		padding-top: 110px;
 		min-height: 295px;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		&_btn {
 			justify-content: flex-end;
 			display: flex;

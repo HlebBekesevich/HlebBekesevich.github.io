@@ -266,9 +266,8 @@ $(".contacts__map_icon").click(function(){
 
 
 window.onscroll = () => {
-	if (window.pageYOffset >= document.documentElement.scrollHeight-document.documentElement.clientHeight-80){
+	if (window.pageYOffset >= document.documentElement.scrollHeight-document.documentElement.clientHeight-120){
 		$(".contacts__map_icon").addClass("active");
-		console.log("add");
 	} else {
 		$(".contacts__map_icon").removeClass("active");
 	}
@@ -279,3 +278,23 @@ $(".contact_link").click(function(){
 	initMap();
 	$(".none").addClass("active");
 });
+
+
+var t;
+function up() {
+  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+  if(top > 0) {
+    window.scrollBy(0,-50);
+    t = setTimeout('up()',20);
+  } else clearTimeout(t);
+  return false;
+}
+
+
+window.onscroll = () => {
+	if (window.pageYOffset >= document.documentElement.scrollHeight-document.documentElement.clientHeight-600){
+		$(".up").addClass("active");
+	} else {
+		$(".up").removeClass("active");
+	}
+}

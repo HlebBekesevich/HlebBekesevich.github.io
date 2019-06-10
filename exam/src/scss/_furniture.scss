@@ -1,9 +1,6 @@
 .furniture {
 	margin-bottom: 280px;
 	&__row {
-		@media (max-width: 992px) {
-			flex-direction: column-reverse;
-		}
 		position: relative;
 		min-height: 395px;
 		&:after {
@@ -19,9 +16,9 @@
 	}
 
 	&__text {
-		padding-top: 110px;
 		min-height: 295px;
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
 		&_btn {
 			display: flex;
