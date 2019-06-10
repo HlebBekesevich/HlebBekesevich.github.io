@@ -1,11 +1,7 @@
 .decor {
 	margin-bottom: 280px;
 	&__row {
-		@media (max-width: 992px) {
-			flex-direction: column;
-		}
 		position: relative;
-		min-height: 395px;
 		&:after {
 			position: absolute;
 			font-size: 396px;
