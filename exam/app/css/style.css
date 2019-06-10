@@ -232,7 +232,7 @@ body {
 	margin-bottom: 135px;
 }
 .main:before {
-	background-image: url(../img/1.png);
+	background-image: url(../img/1.jpg);
 	content: "";
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -246,7 +246,7 @@ body {
 	min-height: 100vh;
 }
 .main:after {
-	background-image: url(../img/2.png);
+	background-image: url(../img/2.jpg);
 	content: "";
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -648,7 +648,7 @@ body {
 	-webkit-filter: grayscale(40%);
 	        filter: grayscale(40%);
 	min-height: 300px;
-	background-image: url(../img/furniture.png);
+	background-image: url(../img/furniture.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: scroll;
@@ -845,7 +845,7 @@ body {
 	-webkit-filter: grayscale(40%);
 	        filter: grayscale(40%);
 	min-height: 300px;
-	background-image: url(../img/decor.png);
+	background-image: url(../img/decor.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: scroll;
@@ -923,7 +923,7 @@ body {
 	}
 }
 .videos__carusel_item_img1 {
-	background-image: url(../img/video-1.png);
+	background-image: url(../img/video-1.jpg);
 	position: relative;
 	-webkit-filter: brightness(80%);
 	        filter: brightness(80%);
@@ -985,7 +985,7 @@ body {
 	cursor: pointer;
 }
 .videos__carusel_item_img2 {
-	background-image: url(../img/video-2.png);
+	background-image: url(../img/video-2.jpg);
 	position: relative;
 	-webkit-filter: brightness(80%);
 	        filter: brightness(80%);
@@ -1047,7 +1047,7 @@ body {
 	cursor: pointer;
 }
 .videos__carusel_item_img3 {
-	background-image: url(../img/video-3.png);
+	background-image: url(../img/video-3.jpg);
 	position: relative;
 	-webkit-filter: brightness(80%);
 	        filter: brightness(80%);
@@ -1147,7 +1147,7 @@ body {
 .video:before {
 	content: "";
 	position: absolute;
-	background-image: url(../img/video.png);
+	background-image: url(../img/video.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -1419,7 +1419,7 @@ body {
 	min-width: 529px;
 	width: 45%;
 	margin-right: -80px;
-	background-image: url(../img/about.png);
+	background-image: url(../img/about.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: scroll;
@@ -1518,7 +1518,7 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-image: url(../img/1.png);
+	background-image: url(../img/1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
