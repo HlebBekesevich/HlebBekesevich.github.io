@@ -157,8 +157,8 @@ a:hover {
 
 html,
 body {
-	overflow-x: hidden;
 	width: 100%;
+	overflow-x: hidden;
 }
 
 .up {
@@ -199,6 +199,7 @@ body {
 	padding: 16px 0;
 }
 .head__link_text {
+	display: block;
 	color: #818181;
 	text-transform: uppercase;
 	letter-spacing: 0;
@@ -209,7 +210,8 @@ body {
 .head__link_text:hover {
 	color: #fff;
 }
-.head__link_text_logo {
+.head__link_logo {
+	display: block;
 	font-size: 40px;
 	letter-spacing: 11px;
 	color: #fff;
@@ -217,7 +219,7 @@ body {
 	text-transform: uppercase;
 	position: relative;
 }
-.head__link_text_logo:before {
+.head__link_logo:before {
 	display: block;
 	content: "";
 	background-color: #bea67c;
@@ -226,6 +228,9 @@ body {
 	position: absolute;
 	top: 17px;
 	left: 48px;
+}
+.head__link_logo:hover {
+	color: #fff;
 }
 
 .main {
@@ -350,16 +355,15 @@ body {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-}
-.main__center_btn:hover {
-	border: 3px solid #fff;
-}
-.main__center_btn_text {
 	text-transform: uppercase;
 	font-size: 14px;
 	letter-spacing: 3px;
 	color: #fff;
 	font-family: "Proxima Nova Bold";
+}
+.main__center_btn:hover {
+	border: 3px solid #fff;
+	color: #fff;
 }
 .main__center_btn_line {
 	background-color: #fff;
@@ -402,6 +406,7 @@ body {
 }
 .main__center_scroll:hover * {
 	color: #fff;
+	text-transform: seri;
 }
 .main__center_scroll:hover .main__center_scroll_mouse {
 	margin-left: -7px;
@@ -517,23 +522,21 @@ body {
 	justify-content: space-between;
 }
 .furniture__text_btn {
+	max-width: 155px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-}
-.furniture__text_btn_text {
 	position: relative;
 	text-transform: uppercase;
 	font-size: 14px;
 	letter-spacing: 3px;
-	margin-right: 5px;
 	color: #000;
 	font-family: "Proxima Nova Bold";
 }
-.furniture__text_btn_text:after {
+.furniture__text_btn:after {
 	position: absolute;
 	bottom: -5px;
 	display: block;
@@ -542,7 +545,7 @@ body {
 	width: 44px;
 	height: 2px;
 }
-.furniture__text_btn_text:hover:before {
+.furniture__text_btn:hover:before {
 	position: absolute;
 	bottom: -5px;
 	display: block;
@@ -564,14 +567,15 @@ body {
 	display: block;
 	width: 5px;
 	height: 5px;
-	border-top: 1px solid #000;
-	border-right: 1px solid #000;
+	border-top: 1px solid #bea67c;
+	border-right: 1px solid #bea67c;
 	-webkit-transform: rotate(45deg);
 	        transform: rotate(45deg);
 	right: 0;
 	top: -2px;
 }
 .furniture__text_text {
+	min-height: 190px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -699,8 +703,10 @@ body {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	text-align: right;
 }
 .decor__text_btn {
+	max-width: 155px;
 	-webkit-box-pack: end;
 	-ms-flex-pack: end;
 	justify-content: flex-end;
@@ -710,28 +716,27 @@ body {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-}
-.decor__text_btn_text {
 	position: relative;
 	text-transform: uppercase;
 	font-size: 14px;
 	letter-spacing: 3px;
-	margin-left: 5px;
 	color: #000;
 	font-family: "Proxima Nova Bold";
 }
-.decor__text_btn_text:after {
+.decor__text_btn:after {
 	position: absolute;
 	bottom: -5px;
+	left: 0;
 	display: block;
 	content: "";
 	background-color: #bea67c;
 	width: 44px;
 	height: 2px;
 }
-.decor__text_btn_text:hover:before {
+.decor__text_btn:hover:before {
 	position: absolute;
 	bottom: -5px;
+	left: 0;
 	display: block;
 	content: "";
 	background-color: #bea67c;
@@ -751,14 +756,15 @@ body {
 	display: block;
 	width: 5px;
 	height: 5px;
-	border-top: 1px solid #000;
-	border-right: 1px solid #000;
+	border-top: 1px solid #bea67c;
+	border-right: 1px solid #bea67c;
 	-webkit-transform: rotate(45deg);
 	        transform: rotate(45deg);
 	right: 0;
 	top: -2px;
 }
 .decor__text_text {
+	min-height: 190px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -769,7 +775,9 @@ body {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	text-align: right;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
 }
 .decor__text_text_head {
 	text-transform: uppercase;
@@ -1122,8 +1130,7 @@ body {
 .video {
 	position: relative;
 	width: 100%;
-	max-height: 915px;
-	padding: 9vh 0;
+	padding: 100px 0;
 }
 .video:after {
 	position: absolute;
@@ -1162,7 +1169,7 @@ body {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
 	    flex-direction: row;
-	padding: 12vh 9% 12%;
+	padding: 120px 9% 12%;
 	max-height: 735px;
 	border: 1px solid #bea67c;
 }
@@ -1240,16 +1247,15 @@ body {
 	-ms-flex-align: center;
 	align-items: center;
 	min-height: 55px;
-}
-.video__text_btn:hover {
-	border: 3px solid #fff;
-}
-.video__text_btn_text {
 	text-transform: uppercase;
 	font-size: 14px;
 	letter-spacing: 3px;
 	color: #fff;
 	font-family: "Proxima Nova Bold";
+}
+.video__text_btn:hover {
+	color: #fff;
+	border: 3px solid #fff;
 }
 
 .far {
@@ -1294,23 +1300,21 @@ body {
 	justify-content: space-between;
 }
 .about__text_btn {
+	max-width: 155px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-}
-.about__text_btn_text {
 	position: relative;
 	text-transform: uppercase;
 	font-size: 14px;
 	letter-spacing: 3px;
-	margin-left: 5px;
 	color: #000;
 	font-family: "Proxima Nova Bold";
 }
-.about__text_btn_text:after {
+.about__text_btn:after {
 	position: absolute;
 	bottom: -5px;
 	display: block;
@@ -1319,7 +1323,7 @@ body {
 	width: 44px;
 	height: 2px;
 }
-.about__text_btn_text:hover:before {
+.about__text_btn:hover:before {
 	position: absolute;
 	bottom: -5px;
 	display: block;
@@ -1341,8 +1345,8 @@ body {
 	display: block;
 	width: 5px;
 	height: 5px;
-	border-top: 1px solid #000;
-	border-right: 1px solid #000;
+	border-top: 1px solid #bea67c;
+	border-right: 1px solid #bea67c;
 	-webkit-transform: rotate(45deg);
 	        transform: rotate(45deg);
 	right: 0;

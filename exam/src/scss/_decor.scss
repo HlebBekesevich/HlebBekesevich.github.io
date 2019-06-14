@@ -19,35 +19,37 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		text-align: right;
+		
 		&_btn {
+			max-width: 155px;
 			justify-content: flex-end;
 			display: flex;
 			align-items: center;
-			&_text {
-				position: relative;
-				text-transform: uppercase;
-				font-size: 14px;
-				letter-spacing: 3px;
-				margin-left: 5px;
-				color: $black;
-				font-family: 'Proxima Nova Bold';
-				&:after {
-					position: absolute;
-					bottom: -5px;
-					display: block;
-					content: "";
-					@include line($w: 44px, $h: 2px);
-				}
-
-				&:hover:before {
-					position: absolute;
-					bottom: -5px;
-					display: block;
-					content: "";
-					@include line($w: 100%, $h: 2px);
-				}
-
+			position: relative;
+			text-transform: uppercase;
+			font-size: 14px;
+			letter-spacing: 3px;
+			color: $black;
+			font-family: 'Proxima Nova Bold';
+			&:after {
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				display: block;
+				content: "";
+				@include line($w: 44px, $h: 2px);
 			}
+
+			&:hover:before {
+				position: absolute;
+				bottom: -5px;
+				left: 0;
+				display: block;
+				content: "";
+				@include line($w: 100%, $h: 2px);
+			}
+
 			&_line {
 				@include line($w: 35px);
 				position: relative;
@@ -58,8 +60,8 @@
 					display: block;
 					width: 5px;
 					height: 5px;
-					border-top: 1px solid $black;
-					border-right: 1px solid $black;
+					border-top: 1px solid $corp-color;
+					border-right: 1px solid $corp-color;
 					transform: rotate(45deg);
 					right: 0;
 					top: -2px;
@@ -68,11 +70,11 @@
 		}
 
 		&_text {
+			min-height: 190px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			text-align: right;
-
+			align-items: flex-end;
 			&_head {
 				text-transform: uppercase;
 				font-size: 48px;

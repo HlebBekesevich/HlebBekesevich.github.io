@@ -1,11 +1,15 @@
 ;(function(){
-	let login = prompt('Login', ''), answer, password;
-	if (login == 'admin') 
-	{
-		password = prompt('Password', '');
-		answer = (password == 'chill')? 'Welcome!' : (password == null)?  'Login error' : 'Password error';
+	slicesOfBread = 10;
+	sandwichesMade = 0;
+
+	newSandwiches = makeMeASandwich(slicesOfBread);
+	sandwichesMade += newSandwiches;
+
+	alert("I made you " + sandwichesMade + " sandwiches.");
+
+	function makeMeASandwich(slicesOfBread) {
+		sandwichesMade = Math.floor(slicesOfBread / 2);
+
+		return sandwichesMade;
 	}
-	else if (login == null) answer = 'Error';
-	else answer = 'I don\'t know your' ;
-	alert(answer);
 })();

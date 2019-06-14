@@ -78,15 +78,14 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			text-transform: uppercase;
+			font-size: 14px;
+			letter-spacing: 3px;
+			color: $white;
+			font-family: 'Proxima Nova Bold';
 			&:hover {
 				border: 3px solid $white;
-			}
-			&_text {
-				text-transform: uppercase;
-				font-size: 14px;
-				letter-spacing: 3px;
 				color: $white;
-				font-family: 'Proxima Nova Bold';
 			}
 			&_line {
 				@include line($c: $white, $w: 35px, $h: 1px);
@@ -117,6 +116,7 @@
 				max-width: 35px;
 				& * {
 					color: $white;
+					text-transform: seri
 				}
 			}
 

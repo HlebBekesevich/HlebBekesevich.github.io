@@ -28,13 +28,12 @@
 	}
 	position: relative;
 	width: 100%;
-	max-height: 915px;
-	padding: 9vh 0;
+	padding: 100px 0;
 	&__row {
 		position: relative;
 		display: flex;
 		flex-direction: row;
-		padding: 12vh 9% 12%;
+		padding: 120px 9% 12%;
 		max-height: 735px;
 		border: 1px solid $corp-color;
 		&:before {
@@ -98,15 +97,14 @@
 			justify-content: center;
 			align-items: center;
 			min-height: 55px;
+			text-transform: uppercase;
+			font-size: 14px;
+			letter-spacing: 3px;
+			color: $white;
+			font-family: 'Proxima Nova Bold';
 			&:hover {
-				border: 3px solid $white;
-			}
-			&_text {
-				text-transform: uppercase;
-				font-size: 14px;
-				letter-spacing: 3px;
 				color: $white;
-				font-family: 'Proxima Nova Bold';
+				border: 3px solid $white;
 			}
 		}
 	}

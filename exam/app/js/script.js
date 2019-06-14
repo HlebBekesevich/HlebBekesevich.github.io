@@ -112,6 +112,13 @@ $(document).ready(function(){
 		$(".n5").css("display", "none");
 	});
 
+    $(".yk").on("click", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 800);
+    });
+
 });
 
 $(document).ready(function(){
@@ -269,7 +276,6 @@ window.onscroll = () => {
 	if (window.pageYOffset >= document.documentElement.scrollHeight-document.documentElement.clientHeight-500){
 		$(".contacts__map_icon").addClass("active");
 		$(".up").addClass("active");
-		console.log("add");
 	} else {
 		$(".contacts__map_icon").removeClass("active");
 		$(".up").removeClass("active");
