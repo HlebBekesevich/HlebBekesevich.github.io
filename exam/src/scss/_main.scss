@@ -1,18 +1,24 @@
 .main {
 	margin-bottom: 135px;
-	&:before {
-		background-image: url(../img/1.jpg);
-		@include main_img;
-		left: 0;
-		right: 44.5%;
-		min-height: 100vh;
-	}
-	&:after {
-		background-image: url(../img/2.jpg);
-		@include main_img;
-		left: 54.5%;
-		right: 0;
-		min-height: 105vh;
+	position: relative;
+		&:before {
+			background-image: url(../img/1.jpg);
+			@include main_img;
+			left: 0;
+			right: 44.5%;
+			min-height: 100vh;
+		}
+		&:after {
+			background-image: url(../img/2.jpg);
+			@include main_img;
+			left: 54.5%;
+			right: 0;
+			min-height: 105vh;
+		}
+
+	&__row {
+		width: 100%;
+		min-height: 425px;
 	}
 	&__left{
 		@media (max-width: 768px) {
@@ -22,12 +28,10 @@
 			@include line($w: 4px, $h: 50px);
 		}
 		&_number {
-			transform: rotate(90deg);
+			writing-mode: vertical-lr;
 			display: none;
-			width: 0;
 			font-size: 55px;
 			letter-spacing: 4px;
-			margin: 30px 0 90px 0;
 			color: $corp-color;
 			font-family: 'Proxima Nova Bold';
 		}
@@ -73,6 +77,7 @@
 
 		&_btn {
 			width: 300px;
+			margin-bottom: 10px;
 			border: 2px solid $white;
 			min-height: 55px;
 			display: flex;
@@ -106,37 +111,27 @@
 		}
 		&_scroll {
 			transition: none;
-			min-height: 180px;
+			min-height: 200px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
 			color: currentColor;
 			max-width: 30px;
 			&:hover {
-				max-width: 35px;
+				max-width: 32px;
 				& * {
 					color: $white;
-					text-transform: seri
 				}
 			}
-
-			&:hover &_mouse {
-				margin-left: -7px;
-				margin-bottom: -20px;
-			}
-			&:hover &_text {
-				margin-left: -15px;
-			}
 			&_mouse {
-				margin-left: -5px;
+				margin: 0 -15px 0 -5px;
 				width: 100%;
-				margin-bottom: -10px;
 			}
 
 			&_line {
 				margin-left: 10px;
 				position: relative;
-				@include line($c: $white,$w: 1.5px,$h: 75px);
+				@include line($c: $white,$w: 1px,$h: 75px);
 				&:before {
 					position: absolute;
 					content: "";
@@ -152,9 +147,8 @@
 			}
 
 			&_text {
-				margin-left: -10px;
-				margin-bottom: 10px;
-				transform: rotate(90deg);
+				margin-left: 4px;
+				writing-mode: vertical-lr;
 				text-transform: uppercase;
 				font-size: 14px;
 				letter-spacing: 3px;
@@ -166,14 +160,14 @@
 		@media (max-width: 992px) {
 			display: none;
 		}
-		padding-top: 45px;
+		display: flex;
+		justify-content: flex-end;
+		padding-top: 50px;
 		&_text {
-			display: block;
-			padding-bottom: 100%;
 			opacity: .2;
 			font-size: 14px;
 			letter-spacing: 3px;
-			transform: rotate(90deg);
+			writing-mode: vertical-lr;
 			color: $corp-color;
 			font-family: 'Proxima Nova Bold';
 		}
@@ -189,9 +183,10 @@
 }
 
 .cont {
+	display: flex;
+	align-items: center;
 	position: relative;
 	min-height: 100vh;
-	padding-top: 30vh;
 	&:after {
 		content: "";
 		position: absolute;

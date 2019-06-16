@@ -1,5 +1,5 @@
 .about {
-	padding: 7.3vh 0 6.5vh 0;
+	padding: 100px 0 80px 0;
 	&__row {
 		padding-right: 10%;
 		position: relative;
@@ -19,6 +19,7 @@
 	}
 
 	&__text {
+		margin-left: calc(-100% / 12);
 		display: flex;
 		justify-content: space-between;
 		&_btn {
@@ -95,7 +96,7 @@
 			min-width: 155px;
 			&_text {
 				@include line($w: 35%, $h: 4px);
-				margin-top: 47%;
+				margin-top: 62px;
 			}
 			&_head {
 				@include line($c: $black, $w: 100%);
@@ -110,9 +111,7 @@
 		filter: brightness(40%);
 		filter: grayscale(40%);
 		min-height: 400px;
-		min-width: 529px;
-		width: 45%;
-		margin-right: -80px;
+		margin-right: -280px;
 		background-image: url(../img/about.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -126,7 +125,7 @@
 			position: absolute;
 			text-transform: uppercase;
 			top: 25%;
-			right: -5%;
+			right: 10%;
 			font-size: 169px;
 			letter-spacing: 12px;
 			color: $opacity-grey;

@@ -1,19 +1,19 @@
 .footer {
-	&:before {
-		content: "";
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background-image: url(../img/1.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center center;
-		filter: brightness(15%);
-	}
-	position: relative;
-	padding: 18px;
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-image: url(../img/1.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			filter: brightness(15%);
+		}
+		padding: 18px 0;
+		position: relative;
 
 	&__text {
 		line-height: 35px;
