@@ -87,18 +87,19 @@
 		}
 
 		&_line {
-			height: 70px;
+			min-height: 190px;
 			display: flex;
 			flex-direction: column;
-			justify-content: space-between;
 			align-items: flex-end;
 			&_text {
 				@include line($w: 35%, $h: 4px);
+				margin-top: 62px;
+
 			}
 			&_head {
 				@include line($c: $black, $w: 100%);
+				margin-top: 22px;
 			}
-
 		}
 	}
 
