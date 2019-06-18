@@ -165,7 +165,7 @@ body {
 	z-index: 10;
 	display: none;
 	position: fixed;
-	bottom: 21%;
+	bottom: 105px;
 	left: 50px;
 	text-transform: uppercase;
 	color: #fff;
@@ -248,7 +248,7 @@ body {
 	        filter: brightness(15%);
 	z-index: -1;
 	left: 0;
-	right: 44.5%;
+	right: 44.9%;
 	min-height: 100vh;
 }
 .main:after {
@@ -261,7 +261,7 @@ body {
 	-webkit-filter: brightness(15%);
 	        filter: brightness(15%);
 	z-index: -1;
-	left: 54.5%;
+	left: 54.9%;
 	right: 0;
 	min-height: 105vh;
 }
@@ -278,6 +278,15 @@ body {
 	background-color: #bea67c;
 	width: 4px;
 	height: 50px;
+}
+.main__left .number {
+	display: none;
+	padding: 50px;
+	margin-left: -75px;
+	height: 155px;
+}
+.main__left .number1 {
+	display: block;
 }
 .main__left_number {
 	-webkit-writing-mode: vertical-lr;
@@ -1266,10 +1275,10 @@ body {
 }
 
 .about {
-	padding: 100px 0 80px 0;
+	padding-top: 100px;
+	margin-bottom: 80px;
 }
 .about__row {
-	padding-right: 12%;
 	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -1304,8 +1313,7 @@ body {
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
-	margin-left: -75px;
-	min-width: 507px;
+	margin-left: -50px;
 }
 @media (max-width: 992px) {
 	.about__text {
@@ -1421,11 +1429,8 @@ body {
 }
 .about__img {
 	position: relative;
-	-webkit-filter: brightness(40%);
-	        filter: brightness(40%);
-	-webkit-filter: grayscale(40%);
-	        filter: grayscale(40%);
 	min-height: 400px;
+	margin-right: -50px;
 	background-image: url(../img/about.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1451,7 +1456,7 @@ body {
 
 .contacts {
 	background-color: #fff;
-	padding: 80px 0;
+	margin-bottom: 80px;
 }
 .contacts__map {
 	max-width: 100%;
@@ -1460,7 +1465,7 @@ body {
 .contacts__map_icon {
 	position: fixed;
 	right: 0;
-	bottom: 20%;
+	bottom: 100px;
 	width: 60px;
 	font-size: 25px;
 	background-color: #bea67c;

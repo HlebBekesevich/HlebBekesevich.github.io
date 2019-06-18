@@ -1,10 +1,10 @@
 .about {
-	padding: 100px 0 80px 0;
+	padding-top: 100px;
+	margin-bottom: 80px;
 	&__row {
 		@media (max-width: 992px) {
 			padding: 0;
 		}
-		padding-right: 12%;
 		position: relative;
 		display: flex;
 		justify-content: space-between;
@@ -28,8 +28,7 @@
 		}
 		display: flex;
 		justify-content: space-between;
-		margin-left: -75px;
-		min-width: 507px;
+		margin-left: -50px;
 		&_btn {
 			max-width: 155px;
 			display: flex;
@@ -114,9 +113,8 @@
 
 	&__img {
 		position: relative;
-		filter: brightness(40%);
-		filter: grayscale(40%);
 		min-height: 400px;
+		margin-right: -50px;
 		background-image: url(../img/about.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;

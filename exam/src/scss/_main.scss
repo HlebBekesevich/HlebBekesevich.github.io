@@ -5,13 +5,13 @@
 			background-image: url(../img/1.jpg);
 			@include main_img;
 			left: 0;
-			right: 44.5%;
+			right: 44.9%;
 			min-height: 100vh;
 		}
 		&:after {
 			background-image: url(../img/2.jpg);
 			@include main_img;
-			left: 54.5%;
+			left: 54.9%;
 			right: 0;
 			min-height: 105vh;
 		}
@@ -27,6 +27,18 @@
 		&_line{
 			@include line($w: 4px, $h: 50px);
 		}
+		
+		.number {
+			display: none;
+			padding: 50px;
+			margin-left: -75px;
+			height: 155px;
+		}
+
+		.number1 {
+			display: block;
+		}
+
 		&_number {
 			writing-mode: vertical-lr;
 			display: none;

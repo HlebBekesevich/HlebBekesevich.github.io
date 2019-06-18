@@ -1,133 +1,113 @@
 $(document).ready(function(){
 
 	$(".l1").hover(function(){
+		$(".number1").show();
 		$(".n1").css({
-			"display": "block",
-			
-				"writing-mode": "vertical-lr",
-			"margin": "30px 0 90px 0"
-		}).show("slow").css({
-			"transform": "rotate(0)",
-			"margin": "60px 0 60px -33px"
+			"display": "inline",
+			"writing-mode": "vertical-lr",
+		}).css({
+			"writing-mode": "horizontal-tb",
 		});
 	}, function(){
 		$(".n1").css({
-			
-				"writing-mode": "vertical-lr",
-			"margin": "30px 0 90px 0"
+			"writing-mode": "vertical-lr",
 		});
 	});
 
 	$(".l2").hover(function(){
+		$(".n1, .number1").hide();
+		$(".number2").show();
 		$(".n2").css({
-			"display": "block",
-			
-				"writing-mode": "vertical-lr",
-			"margin": "30px 0 90px 0"
-		}).show("slow").css({
-			"transform": "rotate(0)",
-			"margin": "60px 0 60px -33px"
+			"display": "inline",
+			"writing-mode": "vertical-lr",
+		}).css({
+			"writing-mode": "horizontal-tb",
 		});
-		$(".n1").css("display", "none");
 		$(".l1").removeClass("active");
 	}, function(){
 		$(".l1").addClass("active");
+		$(".number1").show();
 		$(".n1").css({
-			"display": "block",
-			"transform": "rotate(0)",
-			"margin": "60px 0 60px -33px"
-		}).show("slow").css({
-			
-				"writing-mode": "vertical-lr",
-			"margin": "30px 0 90px 0"
+			"display": "inline",
+			"writing-mode": "horizontal-tb",
+		}).css({
+			"writing-mode": "vertical-lr",
 		});
-		$(".n2").css("display", "none");
+		$(".n2, .number2").hide();
 	});
 
 	$(".l3").hover(function(){
+		$(".n1, .number1").hide();
+		$(".number3").show();
 		$(".n3").css({
-			"display": "block",
-			
-				"writing-mode": "vertical-lr",
-			"margin": "30px 0 90px 0"
-		}).show("slow").css({
-			"transform": "rotate(0)",
-			"margin": "60px 0 60px -33px"
+			"display": "inline",
+			"writing-mode": "vertical-lr",
+		}).css({
+			"writing-mode": "horizontal-tb",
 		});
-		$(".n1").css("display", "none");
 		$(".l1").removeClass("active");
 	}, function(){
 		$(".l1").addClass("active");
+		$(".number1").show();
 		$(".n1").css({
-			"display": "block",
-			"transform": "rotate(0)",
-			"margin": "60px 0 60px -33px"
-		}).show("slow").css({
-			
-				"writing-mode": "vertical-lr",
-			"margin": "30px 0 90px 0"
+			"display": "inline",
+			"writing-mode": "horizontal-tb",
+		}).css({
+			"writing-mode": "vertical-lr",
 		});
-		$(".n3").css("display", "none");
+		$(".n3, .number3").hide();
 	});
 
 	$(".l4").hover(function(){
+		$(".n1, .number1").hide();
+		$(".number4").show();
 		$(".n4").css({
-			"display": "block",
-			
-				"writing-mode": "vertical-lr",
-			"margin": "30px 0 90px 0"
-		}).show("slow").css({
-			"transform": "rotate(0)",
-			"margin": "60px 0 60px -33px"
+			"display": "inline",
+			"writing-mode": "vertical-lr",
+		}).css({
+			"writing-mode": "horizontal-tb",
 		});
-		$(".n1").css("display", "none");
 		$(".l1").removeClass("active");
 	}, function(){
 		$(".l1").addClass("active");
+		$(".number1").show();
 		$(".n1").css({
-			"display": "block",
-			"transform": "rotate(0)",
-			"margin": "60px 0 60px -33px"
-		}).show("slow").css({
-			
-				"writing-mode": "vertical-lr",
-			"margin": "30px 0 90px 0"
+			"display": "inline",
+			"writing-mode": "horizontal-tb",
+		}).css({
+			"writing-mode": "vertical-lr",
 		});
-		$(".n4").css("display", "none");
+		$(".n4, .number4").hide();
 	});
 
 	$(".l5").hover(function(){
+		$(".n1, .number1").hide();
+		$(".number5").show();
 		$(".n5").css({
-			"display": "block",
-			
-				"writing-mode": "vertical-lr",
-			"margin": "30px 0 90px 0"
-		}).show("slow").css({
-			"transform": "rotate(0)",
-			"margin": "60px 0 60px -33px"
+			"display": "inline",
+			"writing-mode": "vertical-lr",
+		}).css({
+			"writing-mode": "horizontal-tb",
 		});
-		$(".n1").css("display", "none");
 		$(".l1").removeClass("active");
 	}, function(){
 		$(".l1").addClass("active");
+		$(".number1").show();
 		$(".n1").css({
-			"display": "block",
-			"transform": "rotate(0)",
-			"margin": "60px 0 60px -33px"
-		}).show("slow").css({
-			
-				"writing-mode": "vertical-lr",
-			"margin": "30px 0 90px 0"
+			"display": "inline",
+			"writing-mode": "horizontal-tb",
+		}).css({
+			"writing-mode": "vertical-lr",
 		});
-		$(".n5").css("display", "none");
+		$(".n5, .number5").hide();
 	});
 
-    $(".yk").on("click", function (event) {
-        event.preventDefault();
-        var id  = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 800);
-    });
+	$(".yk").on("click", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+		top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 800);
+	});
 
 });
 
@@ -141,12 +121,12 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  var video = $(".video").height();
-  $(".play").css({
-			"width": video,
-			"height": video,
-			"top": video * 0.1
-		})
+	var video = $(".video").height();
+	$(".play").css({
+		"width": video,
+		"height": video,
+		"top": video * 0.1
+	})
 });
 
 
@@ -310,10 +290,10 @@ $(".contact_link").click(function(){
 
 var t;
 function up() {
-  var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-  if(top > 0) {
-    window.scrollBy(0,-50);
-    t = setTimeout('up()',20);
-  } else clearTimeout(t);
-  return false;
+	var top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+	if(top > 0) {
+		window.scrollBy(0,-50);
+		t = setTimeout('up()',20);
+	} else clearTimeout(t);
+	return false;
 }

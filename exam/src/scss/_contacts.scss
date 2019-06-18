@@ -1,13 +1,13 @@
 .contacts {
 	background-color: $white;
-	padding: 80px 0;
+	margin-bottom: 80px;
 	&__map {
 		max-width: 100%;
 		min-height: 300px;
 		&_icon {
 			position: fixed;
 			right: 0;
-			bottom: 20%;
+			bottom: 100px;
 			width: 60px;
 			font-size: 25px;
 			background-color: $corp-color;
