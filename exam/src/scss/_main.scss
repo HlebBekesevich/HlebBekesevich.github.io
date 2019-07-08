@@ -1,29 +1,24 @@
 .main {
 	margin-bottom: 135px;
 	position: relative;
-		&:before {
-			background-image: url(../img/1.jpg);
-			@include main_img;
-			left: 0;
-			right: 44.9%;
-			min-height: 100vh;
-		}
-		&:after {
-			background-image: url(../img/2.jpg);
-			@include main_img;
-			left: 54.9%;
-			right: 0;
-			min-height: 105vh;
-		}
-
-	&__row {
-		width: 100%;
-		min-height: 425px;
+	display: flex;
+	align-items: center;
+	min-height: 100vh;
+	&:before {
+		background-image: url(../img/1.jpg);
+		@include main_img;
+		left: 0;
+		right: 44.9%;
+		min-height: 100vh;
 	}
-	&__left{
-		@media (max-width: 768px) {
-			display: none;
-		}
+	&:after {
+		background-image: url(../img/2.jpg);
+		@include main_img;
+		left: 54.9%;
+		right: 0;
+		min-height: 105vh;
+	}
+	&__left {
 		&_line{
 			@include line($w: 4px, $h: 50px);
 		}
@@ -42,7 +37,7 @@
 		&_number {
 			writing-mode: vertical-lr;
 			display: none;
-			font-size: 55px;
+			font-size: $number-size;
 			letter-spacing: 4px;
 			color: $corp-color;
 			font-family: 'Proxima Nova Bold';
@@ -71,23 +66,25 @@
 		}
 	}
 	&__center {
-		padding-top: 40px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
 		&_head {
-			@media (max-width: 768px) {
-				font-size: 75px;
+			@media (max-width: 767px) {
+				font-size: $min-head;
 				letter-spacing: 15px;
+				margin-bottom: 20px;
 			}
+			@media (max-width: 460px) {
+				font-size: $products-head;
+			}
+			padding-top: 40px;
 			text-transform: uppercase;
-			font-size: 100px;
+			font-size: $head;
 			letter-spacing: 20px;
 			color: $corp-color;
 			font-family: 'Proxima Nova Bold';
 		}
 
 		&_btn {
+			max-width: 50%;
 			width: 300px;
 			margin-bottom: 10px;
 			border: 2px solid $white;
@@ -96,7 +93,6 @@
 			justify-content: center;
 			align-items: center;
 			text-transform: uppercase;
-			font-size: 14px;
 			letter-spacing: 3px;
 			color: $white;
 			font-family: 'Proxima Nova Bold';
@@ -104,7 +100,10 @@
 				border: 3px solid $white;
 				color: $white;
 			}
-			&_line {
+			&_line {				
+				@media (max-width: 575px) {
+					display: none;
+				}
 				@include line($c: $white, $w: 35px, $h: 1px);
 				position: relative;
 				&:after {
@@ -122,6 +121,9 @@
 			}
 		}
 		&_scroll {
+			@media (max-width: 991px) {
+				display: none;
+			}			
 			transition: none;
 			min-height: 200px;
 			display: flex;
@@ -162,27 +164,18 @@
 				margin-left: 4px;
 				writing-mode: vertical-lr;
 				text-transform: uppercase;
-				font-size: 14px;
 				letter-spacing: 3px;
 				font-family: 'Proxima Nova Bold';
 			}
 		}
 	}
-	&__right {
-		@media (max-width: 992px) {
-			display: none;
-		}
-		display: flex;
-		justify-content: flex-end;
+	&__right_text {
 		padding-top: 50px;
-		&_text {
-			opacity: .2;
-			font-size: 14px;
-			letter-spacing: 3px;
-			writing-mode: vertical-lr;
-			color: $corp-color;
-			font-family: 'Proxima Nova Bold';
-		}
+		opacity: .2;
+		letter-spacing: 3px;
+		writing-mode: vertical-lr;
+		color: $corp-color;
+		font-family: 'Proxima Nova Bold';
 	}
 }
 
@@ -194,16 +187,12 @@
 	background-color: $corp-color;
 }
 
-.cont {
-	display: flex;
-	align-items: center;
-	position: relative;
-	min-height: 100vh;
-	&:after {
-		content: "";
-		position: absolute;
-		bottom: calc(-25px - 5vh);
-		right: 0;
-		@include line($w: 4px,$h: 50px);
+.bLine {
+	@media (max-width: 1199px) {
+		display: none;
 	}
+	position: absolute;
+	bottom: calc(-25px - 5vh);
+	left: calc(50vw + 551px);
+	@include line($w: 4px,$h: 50px);
 }

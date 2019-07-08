@@ -24,6 +24,30 @@
 	font-style: normal;
 }
 
+@function px_to_rem($target, $context: $base-size) {
+	@if $target==0 {
+		@return 0
+	}
+
+	@return $target / $context+0rem;
+}
+
+$base-size: 14px;
+$products-text: px_to_rem(15px);
+$contact-info-text: px_to_rem(18px);
+$up: px_to_rem(20px);
+$contact-info: px_to_rem(25px);
+$footer-title: px_to_rem(30px);
+$products-number: px_to_rem(36px);
+$logo: px_to_rem(40px);
+$products-head: px_to_rem(48px);
+$box-up-size: px_to_rem(50px);
+$number-size: px_to_rem(55px);
+$min-head: px_to_rem(75px);
+$head: px_to_rem(100px);
+$name-section: px_to_rem(169px);
+$big-size: px_to_rem(396px);
+
 //////////////////////////////////////////////
 ////////////////////FONTS/////////////////////
 //////////////////////////////////////////////

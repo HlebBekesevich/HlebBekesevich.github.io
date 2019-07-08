@@ -1,17 +1,20 @@
 .furniture {
 	margin-bottom: 280px;
-	&__row {
-		position: relative;
-		&:after {
-			position: absolute;
-			font-size: 396px;
-			content: "F";
-			opacity: .08;
-			color: $corp-color;
-			left: 0;
-			top: -297px;
-			font-family: 'Proxima Nova Bold';
+	position: relative;
+	@media (max-width: 991px) {
+		margin-bottom: 50px;
+	}
+	&__f {
+		@media (max-width: 1199px) {
+			display: none;
 		}
+		position: absolute;
+		font-size: $big-size;
+		opacity: .08;
+		color: $corp-color;
+		left: calc(50vw - 580px);
+		top: -297px;
+		font-family: 'Proxima Nova Bold';
 	}
 
 	&__text {
@@ -25,7 +28,6 @@
 			align-items: center;
 			position: relative;
 			text-transform: uppercase;
-			font-size: 14px;
 			letter-spacing: 3px;
 			color: $black;
 			font-family: 'Proxima Nova Bold';
@@ -72,13 +74,13 @@
 
 			&_head {
 				text-transform: uppercase;
-				font-size: 48px;
+				font-size: $products-head;
 				letter-spacing: 3px;
 				color: $black;
 				font-family: 'Proxima Nova Bold';
 			}
 			&_text {
-				font-size: 15px;
+				font-size: $products-text;
 				letter-spacing: 0px;
 				color: $light-grey;
 				font-family: 'Proxima Nova Regular';
@@ -107,13 +109,16 @@
 		position: absolute;
 		bottom: 0;
 		left: 15px;
-		font-size: 36px;
+		font-size: $products-number;
 		letter-spacing: 3px;
 		font-family: 'Proxima Nova Bold';
 		&_dot {
 			color: $corp-color;
 		}
 		&:before {
+			@media (max-width: 991px) {
+				display: none;
+			}
 			content: "";
 			@include line($w: 4px, $h: 51px);
 			position: absolute;
@@ -138,7 +143,7 @@
 			text-transform: uppercase;
 			top: 25%;
 			left: 50%;
-			font-size: 169px;
+			font-size: $name-section;
 			letter-spacing: 12px;
 			color: $opacity-grey;
 			font-family: 'Proxima Nova Bold';

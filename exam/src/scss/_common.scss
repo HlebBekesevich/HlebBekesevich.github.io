@@ -5,9 +5,15 @@
 html, body {
 	width: 100%;
 	overflow-x: hidden;
+	scroll-behavior: smooth;
+	font-size: $base-size;
 }
 
 .up {
+	@media (max-width: 767px) {
+		left: 25px;
+		bottom: $box-up-size;
+	}
 	z-index: 10;
 	display: none;
 	position: fixed;
@@ -16,7 +22,7 @@ html, body {
 	text-transform: uppercase;
 	color: $white;
 	font-family: 'Proxima Nova Bold';
-	font-size: 20px;
+	font-size: $up;
 	&.active {
 		display: block;
 	}
@@ -28,8 +34,8 @@ html, body {
 		left: -12px;
 		display: block;
 		transform: rotate(45deg);
-		width: 50px;
-		height: 50px;
+		width: $box-up-size;
+		height: $box-up-size;
 		background-color: $corp-color;
 	}
 }

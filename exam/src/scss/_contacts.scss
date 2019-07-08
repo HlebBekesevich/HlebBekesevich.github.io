@@ -5,11 +5,15 @@
 		max-width: 100%;
 		min-height: 300px;
 		&_icon {
+			@media (max-width: 575px) {
+				bottom: 45px;
+				width: $box-up-size;
+			}
 			position: fixed;
 			right: 0;
 			bottom: 100px;
 			width: 60px;
-			font-size: 25px;
+			font-size: $contact-info;
 			background-color: $corp-color;
 			color: $white;
 			cursor: pointer;
@@ -31,7 +35,7 @@
 		align-items: center;
 		text-align: center;
 		color: $corp-color;
-		font-size: 25px;
+		font-size: $contact-info;
 
 		&_link {
 			color: $black;
@@ -45,7 +49,7 @@
 
 		&_text {
 			font-family: 'Proxima Nova Regular';
-			font-size: 18px;
+			font-size: $contact-info-text;
 			color: $black;
 		}
 	}
