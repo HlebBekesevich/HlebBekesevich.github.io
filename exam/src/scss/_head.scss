@@ -15,6 +15,11 @@
 			font-family: 'Proxima Nova Bold';
 			text-align: center;
 			padding: 10px 0;
+			@media (max-width: 767px) {
+				padding-bottom: 0;
+				margin-bottom: -5px;
+				color: $white;
+			}
 			&:hover {
 				color: $white;
 			}
@@ -41,4 +46,9 @@
 			}
 		}
 	}
+}
+
+.scroll {
+	background-color: rgba($corp-color, .5);
+	padding: 6px 0;
 }

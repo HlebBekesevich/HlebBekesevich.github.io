@@ -163,6 +163,28 @@ body {
 	font-size: 14px;
 }
 
+.menu_bar {
+	cursor: pointer;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 1.78571rem;
+	height: 1.78571rem;
+}
+.menu_bar .line {
+	border-radius: 30px;
+	background-color: #fff;
+	height: 14%;
+	width: 100%;
+}
+
 .up {
 	z-index: 10;
 	display: none;
@@ -215,6 +237,13 @@ body {
 	text-align: center;
 	padding: 10px 0;
 }
+@media (max-width: 767px) {
+	.head__link_text {
+		padding-bottom: 0;
+		margin-bottom: -5px;
+		color: #fff;
+	}
+}
 .head__link_text:hover {
 	color: #fff;
 }
@@ -239,6 +268,11 @@ body {
 }
 .head__link_logo:hover {
 	color: #fff;
+}
+
+.scroll {
+	background-color: rgba(190, 166, 124, .5);
+	padding: 6px 0;
 }
 
 .main {
@@ -280,25 +314,22 @@ body {
 	right: 0;
 	min-height: 105vh;
 }
+.main .number {
+	display: block;
+	text-align: center;
+	max-width: 100px;
+	margin-left: -50px;
+	padding: 20px 0 90px 0;
+}
 .main__left_line {
 	background-color: #bea67c;
 	width: 4px;
 	height: 50px;
 }
-.main__left .number {
-	display: none;
-	padding: 50px;
-	margin-left: -75px;
-	height: 155px;
-}
-.main__left .number1 {
-	display: block;
-}
 .main__left_number {
-	-webkit-writing-mode: vertical-lr;
-	    -ms-writing-mode: tb-lr;
-	        writing-mode: vertical-lr;
-	display: none;
+	-webkit-transform: rotate(90deg);
+	        transform: rotate(90deg);
+	display: block;
 	font-size: 3.92857rem;
 	letter-spacing: 4px;
 	color: #bea67c;
@@ -688,6 +719,11 @@ body {
 	font-family: "Proxima Nova Bold";
 	opacity: .2;
 }
+@media (max-width: 991px) {
+	.furniture__img:before {
+		display: none;
+	}
+}
 
 .decor {
 	margin-bottom: 280px;
@@ -885,6 +921,11 @@ body {
 	color: #d0d0d0;
 	font-family: "Proxima Nova Bold";
 	opacity: .2;
+}
+@media (max-width: 991px) {
+	.decor__img:before {
+		display: none;
+	}
 }
 
 .videos {

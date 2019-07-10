@@ -138,6 +138,9 @@
 		background-position: right top;
 		box-shadow: 0 0 10px rgba(0,0,0,.4);
 		&:before {
+			@media (max-width: 991px) {
+				display: none;
+			}
 			content: "furniture";
 			position: absolute;
 			text-transform: uppercase;

@@ -9,6 +9,21 @@ html, body {
 	font-size: $base-size;
 }
 
+.menu_bar {
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: $contact-info;
+	height: $contact-info;
+	.line {
+		border-radius: 30px;
+		background-color: $white;
+		height: 14%;
+		width: 100%;
+	}
+}
+
 .up {
 	@media (max-width: 767px) {
 		left: 25px;
