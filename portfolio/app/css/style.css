@@ -12,6 +12,9 @@ html {
 	width: 100%;
 }
 
+body {
+	background-color: #395839;
+}
 @media (max-width: 767px) {
 	body {
 		font-size: 10px;
