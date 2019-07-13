@@ -157,10 +157,10 @@ a:hover {
 
 html,
 body {
-	width: 100%;
-	overflow-x: hidden;
+	max-width: 100%;
 	scroll-behavior: smooth;
 	font-size: 14px;
+	overflow-x: hidden;
 }
 
 .menu_bar {
@@ -531,6 +531,7 @@ body {
 .furniture {
 	margin-bottom: 280px;
 	position: relative;
+	overflow: hidden;
 }
 @media (max-width: 991px) {
 	.furniture {
@@ -707,12 +708,21 @@ body {
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
 	        box-shadow: 0 0 10px rgba(0, 0, 0, .4);
 }
-.furniture__img:before {
-	content: "furniture";
+@media (max-width: 600px) {
+	.furniture__img {
+		min-height: 225px;
+	}
+}
+@media (max-width: 400px) {
+	.furniture__img {
+		min-height: 140px;
+	}
+}
+.furniture__img_text {
 	position: absolute;
 	text-transform: uppercase;
 	top: 25%;
-	left: 50%;
+	left: 70%;
 	font-size: 12.07143rem;
 	letter-spacing: 12px;
 	color: #d0d0d0;
@@ -720,7 +730,7 @@ body {
 	opacity: .2;
 }
 @media (max-width: 991px) {
-	.furniture__img:before {
+	.furniture__img_text {
 		display: none;
 	}
 }
@@ -909,6 +919,16 @@ body {
 	background-position: left top;
 	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .4);
 	        box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+@media (max-width: 600px) {
+	.decor__img {
+		min-height: 225px;
+	}
+}
+@media (max-width: 400px) {
+	.decor__img {
+		min-height: 140px;
+	}
 }
 .decor__img:before {
 	content: "decor";
@@ -1578,6 +1598,11 @@ body {
 	color: #d0d0d0;
 	font-family: "Proxima Nova Bold";
 	opacity: .2;
+}
+@media (max-width: 991px) {
+	.about__img:before {
+		display: none;
+	}
 }
 
 .contacts {

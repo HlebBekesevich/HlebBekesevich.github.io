@@ -3,10 +3,10 @@
 }
 
 html, body {
-	width: 100%;
-	overflow-x: hidden;
+	max-width: 100%;
 	scroll-behavior: smooth;
 	font-size: $base-size;
+	overflow-x: hidden;
 }
 
 .menu_bar {

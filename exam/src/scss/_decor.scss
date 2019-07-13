@@ -129,6 +129,12 @@
 		}
 	}
 	&__img {
+		@media (max-width: 600px) {
+			min-height: 225px;
+		}
+		@media (max-width: 400px) {
+			min-height: 140px;
+		}
 		position: relative;
 		filter: brightness(40%);
 		filter: grayscale(40%);

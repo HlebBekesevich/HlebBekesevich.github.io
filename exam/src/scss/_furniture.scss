@@ -1,6 +1,7 @@
 .furniture {
 	margin-bottom: 280px;
 	position: relative;
+	overflow: hidden;
 	@media (max-width: 991px) {
 		margin-bottom: 50px;
 	}
@@ -127,6 +128,12 @@
 		}
 	}
 	&__img {
+		@media (max-width: 600px) {
+			min-height: 225px;
+		}
+		@media (max-width: 400px) {
+			min-height: 140px;
+		}
 		position: relative;
 		filter: brightness(40%);
 		filter: grayscale(40%);
@@ -137,15 +144,14 @@
 		background-attachment: scroll;
 		background-position: right top;
 		box-shadow: 0 0 10px rgba(0,0,0,.4);
-		&:before {
+		&_text {
 			@media (max-width: 991px) {
 				display: none;
 			}
-			content: "furniture";
 			position: absolute;
 			text-transform: uppercase;
 			top: 25%;
-			left: 50%;
+			left: 70%;
 			font-size: $name-section;
 			letter-spacing: 12px;
 			color: $opacity-grey;

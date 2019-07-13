@@ -132,6 +132,9 @@
 		box-shadow: 0 0 10px rgba(0,0,0,.4);
 		z-index: -1;
 		&:before {
+			@media (max-width: 991px) {
+				display: none;
+			}
 			z-index: 9999;
 			content: "aboutus";
 			position: absolute;
